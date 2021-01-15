@@ -1,0 +1,151 @@
+﻿@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+	*
+	{
+		padding:0;margin:0;
+		font-family: 'Nanum Gothic', sans-serif;
+	}
+
+	li
+	{
+		list-style:none;
+
+	}
+
+	a
+	{
+		text-decoration:none;
+	}
+    h3,h1{color:white;}
+
+	body
+	{
+		background-color:#7db0e0;
+		background-image:url("../../img/로고투명도.png");
+		background-repeat:no-repeat;
+		background-size:45% 35%;
+		background-position: 50% 50%;
+		background-attachment:fixed;
+	}
+	.main
+	{
+		height:auto;
+		width:100%;
+		margin:0 auto;
+	}
+
+	
+
+	.tip
+	{
+		margin: 0 auto;
+		text-align:center;
+		font-size:20px;
+		color:#ffffff;
+		height:55px;
+		width:60%;
+		border-radius:10px;
+		background-color:#3498db;
+	}
+
+	.st
+	{
+		margin: 20px 50px auto;
+		text-align:center;
+		font-size:20px;
+		color:#3498db;
+		height:55px;
+		width:60%;
+		border-radius:10px;
+		background-color:#ffffff;
+
+	}
+	.but
+	{
+		float:left;
+	}
+	.in
+	{
+		text-align:center;
+		margin-top:20px;
+		width:100%;height:80%;
+	
+		
+	}
+	#title
+	{
+		width:100%;height:50px;
+	}
+	
+	
+	#title_i1
+	{	position:relative;
+		display:inline-block;
+		width:40px;height:40px;
+		background-image:url("../../img/usermenu.png");
+		background-size:100%;
+		background-repeat:no-repeat;
+		top:10px;
+	}
+	#title_text{
+		position:relative;
+		display:inline-block;
+		top:-5px;	
+	}
+
+	#title_i2{
+		position:relative;
+		display:inline-block;
+		width:40px;height:40px;
+		background-image:url("../../img/화살표2.png");
+		background-size:100%;
+		background-repeat:no-repeat;
+		top:10px;
+		right:10px;
+		float:right;
+	}
+
+	#title_i1:active,#title_i1:hover{
+		opacity:0.5;
+	}
+
+	#title_i2:active,#title_i2:hover{
+		opacity:0.5;
+	}
+	#divHid1{
+		position:relative;
+		margin:0 auto;
+		text-align:center;
+	}
+	#divBtn1{
+		display:block;
+		position:relative;
+		margin: 0 auto;
+		text-align:center;
+		width:100%; height:100px;
+		top:20px;
+	}
+
+    #divBtn3{
+		margin:0 auto;
+	}
+	
+	#start{
+		position:absolute;
+		width:50%; 
+		text-align:center;
+		
+	}
+	
+	#divHid1 h5
+	{
+		padding: 20px;
+	}
+	h1{
+		font-weight: 900;
+		font-size: 30px;
+	}
+
+
+
+

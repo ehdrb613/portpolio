@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>h검사</title>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/htp/h검사_style.css">
+       <script src="../js/h검사.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class = "main">
+		<header>
+		<div id="title">
+				<a href=""><div id = "title_i1"></div></a>
+
+            <a href="../sub/htp.html"><img id = "title_i2"/></a>
+        </div>
+        </header>
+        
+        <section>
+        	<div id="name">
+        		<span id="name1">H</span>
+        		<span id="name2">그림검사</span>
+        		<br>
+        		<span id="name3">집</span>
+        		<span id="name4">을 그려주세요</span>
+        	</div>
+        	<div id="explan">
+        		<div class="explan"><h5>모바일이 아닌 도화지에 그린것을 촬영해 </h5></div>
+        		<div class="explan"><h5>검사를 받는 방법으로 H 그림검사를</h5></div>
+        		<div class="explan"><h5>가로로 그려주셔야 한니다.</h5></div>
+        		<div class="explan"><h5>더 정밀하고 원활한 검사방법을 위하여</h5></div>
+        		<div class="explan"><h5>미리 그려 놓거나 시간을 너무</h5></div>
+        		<div class="explan"><h5>길게 그리지 말아주세요.</h5></div>
+        	</div>
+          <br>
+        	<div id="time">
+					<div id="output">검사진행시간</div>
+					<div id="controls">
+					  <button class="bu1" id="startPause" onclick="startPause()">시작</button>
+					  
+					</div>
+		   </div>
+           
+        
+</br></br></br></br>
+<div id="camera">
+        	<section id="wrapper">
+<div id="carbonads-container"><div class="carbonad"><div id="azcarbon"></div><script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/14060/azcarbon_2_1_0_VERT"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script></div></div>
+
+<article align=center>
+  <p id="status"></p>
+  <p><input type=file ></p>
+  <div id="holder"></div>
+</article>
+<script>
+var upload = document.getElementsByTagName('input')[0],
+    holder = document.getElementById('holder'),
+    state = document.getElementById('status');
+if (typeof window.FileReader === 'undefined') {
+  state.className = 'fail';
+} else {
+  state.className = 'success';
+  state.innerHTML = '';
+}
+ 
+upload.onchange = function (e) {
+  e.preventDefault();
+
+  var file = upload.files[0],
+      reader = new FileReader();
+  reader.onload = function (event) {
+    var img = new Image();
+    img.src = event.target.result;
+  
+  
+      img.width = 320;
+	  img.right = 320;
+ 
+    holder.innerHTML = '';
+    holder.appendChild(img);
+  };
+  reader.readAsDataURL(file);
+
+  return false;
+};
+</script>
+
+        </section></div>
+
+		<footer>
+
+				<div id="divBtn1">
+   					<a href="htp.html" id="btn1"><span>prev</span></a>
+  				</div>		
+
+  				<div id="divBtn2">
+   					<a href="t검사.html" id="btn2"><span>next</span></a>
+  				</div>
+
+        </footer>		
+    
+
+
+
+
+
+</div>
+</body>
+</html>

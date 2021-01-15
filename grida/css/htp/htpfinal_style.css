@@ -1,0 +1,47 @@
+<style type="text/css">
+		@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+		a{
+			text-decoration: none;
+		}
+		body{
+			font-family: 'Nanum Gothic', sans-serif;
+			margin: 0 auto;
+			box-sizing:border-box;
+			text-align: center;
+			background:#7db0e0;
+
+		}
+		header{
+			background-image: url("../../img/logowhite.png");
+			background-repeat: no-repeat;
+			background-size: 90%;
+			width: 319px;
+			height: 268px;
+			background-position: 50%, 50%;
+			margin: 0 auto;
+
+		}
+		section{
+			height: 200px;
+		}
+		p{
+			font-weight: 900;
+			font-size: 25px;
+		}
+		#day{
+			font-weight: 700;
+		}
+		h5{
+			margin-top: 0;
+		}
+		#home{
+			color: white;
+			top: 30px;
+			border : 1px solid white;
+			box-sizing: border-box;
+			border-radius: 20px;
+			padding: 10px;
+			text-decoration: none;
+			
+		}
+	</style>

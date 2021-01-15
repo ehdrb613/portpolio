@@ -1,0 +1,156 @@
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+	*
+	{
+		padding:0;margin:0;
+		font-family: 'Nanum Gothic', sans-serif;
+	}
+	li
+	{
+		list-style:none;
+	}
+	a
+	{
+		text-decoration:none;
+	}
+
+	body
+	{
+		background-color:#7db0e0;
+		background-image:url("../../img/로고투명도.png");
+		background-repeat:no-repeat;
+		background-size:70% 35%;
+		background-position: 50% 50%;
+		background-attachment:fixed;
+	}
+	.main
+	{
+		height:auto;
+		width:100%;
+		margin:0 auto;
+	}
+	#wrapper{
+              width:100%;   height:auto;margin:0 auto;}
+
+	#title
+	{
+		width:100%;height:50px;
+	}
+	
+	
+	#title_i1
+	{	position:relative;
+		display:inline-block;
+		width:40px;height:40px;
+		background-image:url("../../img/usermenu.png");
+		background-size:100%;
+		background-repeat:no-repeat;
+		top:10px;
+	}
+
+	#title_i2
+	{
+		position:relative;
+		display:inline-block;
+		width:40px;height:40px;
+		background-image:url("../../img/화살표2.png");
+		background-size:100%;
+		background-repeat:no-repeat;
+		top:10px;
+		right:10px;
+		float:right;
+	
+	
+	}
+
+	
+	#name{
+		width: 100%;
+		height: auto;
+		text-align: center;
+
+	}
+	#name1{
+		font-size: 20px;
+		font-weight: 700;
+	}
+	#name2{
+		font-size: 19px;
+		
+	}
+	#name3{
+		font-size: 20px;
+		font-weight: 700;
+		color: blue;
+	}
+	#name4{
+		font-size: 20px;
+		font-weight: 700;
+	}
+	#explan{
+		margin-top: 50px;
+		width: 100%;
+		height: auto;
+	}
+	.explan{
+		font-size: 18px;
+		text-align: center;
+		font-weight: 500;
+
+	}
+	#output 
+	{
+		
+		margin: 0 auto;
+		font-size : 20px;
+        text-align: center;
+	}
+	#time{
+		
+		margin: 0 auto;
+		text-align: center;
+		
+		width: 120px;
+	}
+	.bu1{width: 100px;}
+	#camera{
+		margin: 0 auto;
+		text-align: center;
+		
+		width: auto;
+		
+
+	}
+	#explan{
+		width: 100%;
+		height: auto;
+	}
+
+
+	#btn1{
+		border : 1px solid white;
+		border-radius: 20px 0 0 20px;
+		color: white;
+		bottom: 10px;
+		left: 0px;
+		position: fixed;
+		float: left;
+	}
+	#btn2{
+		border : 1px solid white;
+		border-radius: 0 20px 20px 0;
+		color: white;
+		bottom: 10px;
+		right: 0px;
+		position: fixed;
+		float: right;
+
+	}
+	footer{
+		
+		height: auto;
+		margin-top : 230px;
+		
+
+	}
