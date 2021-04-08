@@ -1,0 +1,14 @@
+D:\DG\c_study\210406\Test0406\WindowsFormsApp1\bin\Release\WindowsFormsApp1.exe.config
+D:\DG\c_study\210406\Test0406\WindowsFormsApp1\bin\Release\WindowsFormsApp1.exe
+D:\DG\c_study\210406\Test0406\WindowsFormsApp1\bin\Release\WindowsFormsApp1.pdb
+D:\DG\c_study\210406\Test0406\WindowsFormsApp1\bin\Release\CxFlatUI.dll
+D:\DG\c_study\210406\Test0406\WindowsFormsApp1\bin\Release\MaterialSkin.dll
+D:\DG\c_study\210406\Test0406\WindowsFormsApp1\bin\Release\SunnyUI.Common.dll
+D:\DG\c_study\210406\Test0406\WindowsFormsApp1\bin\Release\SunnyUI.dll
+D:\DG\c_study\210406\Test0406\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Form1.resources
+D:\DG\c_study\210406\Test0406\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Properties.Resources.resources
+D:\DG\c_study\210406\Test0406\WindowsFormsApp1\obj\Release\Twelveyear.csproj.GenerateResource.cache
+D:\DG\c_study\210406\Test0406\WindowsFormsApp1\obj\Release\Twelveyear.csproj.CoreCompileInputs.cache
+D:\DG\c_study\210406\Test0406\WindowsFormsApp1\obj\Release\Twelveyear.csproj.CopyComplete
+D:\DG\c_study\210406\Test0406\WindowsFormsApp1\obj\Release\WindowsFormsApp1.exe
+D:\DG\c_study\210406\Test0406\WindowsFormsApp1\obj\Release\WindowsFormsApp1.pdb
