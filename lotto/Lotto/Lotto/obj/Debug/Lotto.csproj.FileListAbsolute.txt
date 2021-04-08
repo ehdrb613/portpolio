@@ -1,0 +1,10 @@
+D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\Lotto.exe.config
+D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\Lotto.exe
+D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\Lotto.pdb
+D:\DG\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.csprojAssemblyReference.cache
+D:\DG\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.Form1.resources
+D:\DG\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.Properties.Resources.resources
+D:\DG\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.csproj.GenerateResource.cache
+D:\DG\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.csproj.CoreCompileInputs.cache
+D:\DG\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.exe
+D:\DG\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.pdb
