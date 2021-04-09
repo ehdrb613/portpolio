@@ -8,3 +8,17 @@ D:\DG\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.csproj.GenerateResource.cache
 D:\DG\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.csproj.CoreCompileInputs.cache
 D:\DG\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.exe
 D:\DG\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.pdb
+D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\Newtonsoft.Json.dll
+D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\System.Web.Helpers.dll
+D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\System.Web.Razor.dll
+D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\System.Web.WebPages.dll
+D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\System.Web.WebPages.Razor.dll
+D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\Newtonsoft.Json.xml
+D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\System.Web.Helpers.xml
+D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\System.Web.Razor.xml
+D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\System.Web.WebPages.xml
+D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\System.Web.WebPages.Razor.xml
+D:\DG\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.csproj.CopyComplete
