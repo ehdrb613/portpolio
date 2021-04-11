@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lotto.data
-{
+namespace Lotto { 
     class LottoNum
     {
         public int drwtNo1 { get; set; }

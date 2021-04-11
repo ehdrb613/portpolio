@@ -22,3 +22,10 @@ D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\System.Web.WebPages.xml
 D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\System.Web.WebPages.Deployment.xml
 D:\DG\portpolio\lotto\Lotto\Lotto\bin\Debug\System.Web.WebPages.Razor.xml
 D:\DG\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.csproj.CopyComplete
+D:\study\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.csprojAssemblyReference.cache
+D:\study\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.Form1.resources
+D:\study\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.Properties.Resources.resources
+D:\study\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.csproj.GenerateResource.cache
+D:\study\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.csproj.CoreCompileInputs.cache
+D:\study\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.exe
+D:\study\portpolio\lotto\Lotto\Lotto\obj\Debug\Lotto.pdb
