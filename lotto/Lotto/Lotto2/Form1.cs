@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using Lotto2.model;
 using System.IO;
 using Lotto2.json;
+using System.Threading;
 
 namespace Lotto2
 {
@@ -38,10 +39,12 @@ namespace Lotto2
             labelNum4.Text = r.Next(10).ToString();
             labelNum5.Text = r.Next(10).ToString();
             labelNum6.Text = r.Next(10).ToString();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
         }
        
 
@@ -51,7 +54,7 @@ namespace Lotto2
 
         private void lottoJsonBtn_Click(object sender, EventArgs e)
         {
-            dm.urlJsonLoad();
+            DataManager.urlJsonLoad();
             
            
            
@@ -59,23 +62,35 @@ namespace Lotto2
 
         private void JsonLoadBtn_Click(object sender, EventArgs e)
         {
-            dm.LoadJson();
+            DataManager.LoadJson();
             dm.numCount();
+            
+            
             for (int i = 0; i < dm.numCount().Length; i++)
             {
-                Console.WriteLine($"번호 {i + 1} 나온 횟수 : {dm.numCount()[i]}개");
-            }
-            for (int i = 0; i < dm.numCount().Length; i++)
-            {
-                
+               // Console.WriteLine($"번호 {i + 1} 나온 횟수 : {dm.numCount()[i]}개");
                 lottoNumlist.Items[i].Text="번호"+(i+1)+" : "+dm.numCount()[i] + "개";
+                
+                lottoChart.Series[0].Points.AddXY(i+1,dm.numCount()[i]);
+                this.Refresh();
+                //Thread.Sleep(500);
             }
+            int count = DataManager.lottoNums.Count-1;
+            
+            winNum.Text = $"{DataManager.lottoNums[count].drwNo} 회차  " +
+                $"{DataManager.lottoNums[count].drwtNo1},"+
+                $"{DataManager.lottoNums[count].drwtNo2},"+
+                $"{DataManager.lottoNums[count].drwtNo3},"+
+                $"{DataManager.lottoNums[count].drwtNo4},"+
+                $"{DataManager.lottoNums[count].drwtNo5},"+
+                $"{DataManager.lottoNums[count].drwtNo6}" +
+                $" 보너스:{DataManager.lottoNums[count].bnusNo}"+
+                $" (날짜 :{DataManager.lottoNums[count].drwNoDate})";
+
+           
         }
 
-        public void lottoWin()
-        {
-
-        }
+       
     }
 }
 

@@ -14,5 +14,8 @@ namespace Lotto2.model
         public int drwtNo4 { get; set; }
         public int drwtNo5 { get; set; }
         public int drwtNo6 { get; set; }
+        public int bnusNo { get; set; }
+        public int drwNo { get; set; }
+        public string drwNoDate { get; set; }
     }
 }
