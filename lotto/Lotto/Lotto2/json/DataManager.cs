@@ -21,7 +21,7 @@ namespace Lotto2.json
 
         public static void urlJsonLoad()
         {
-
+            lottoNums.Clear();
             using (WebClient wc = new WebClient())
             {
 
@@ -36,12 +36,21 @@ namespace Lotto2.json
                 var addJson = "{\"Lotto\":[";//하나의 변수에 json 모두 저장
                 var json = "";
                 JObject jArray = new JObject();
-
+                string[] ldlabel = { "", ".", "..","..." };//로딩중 ...
+                int labelcount = 0;
                 // 몇회 까지 있는지 먼저 확인
+                Loading.loading.loadLabel1.Refresh();
+                Loading.loading.loadLabel2.Refresh();
                 while (true)
                 {
+
+                   
+
                     json = wc.DownloadString("https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=" + (icount++));
                     jArray = JObject.Parse(json);
+                    
+                    
+                    
                     if (jArray["returnValue"].ToString() == "fail")
                     {
                         icount--;
@@ -49,18 +58,48 @@ namespace Lotto2.json
                         break;
                     }
 
-                }
+                    if (icount % 10 == 0)
+                    {
+                        Loading.loading.loadLabel1.Text = "로딩중" + ldlabel[labelcount];
+                        Loading.loading.loadLabel1.Refresh();
+                        labelcount++;
+                        if (labelcount == 4)
+                            labelcount = 0;
+                    }
 
+                }
+                double percent = Math.Truncate((100.0 / icount)*10)/10;
+                double sumpercent = percent;
                 //Console.WriteLine(icount);
                 //json 파일 저장 
-
+                Console.WriteLine(percent);
                 for (int i = start; i < icount; i++)
                 {
                     wc.Encoding = Encoding.UTF8;
                     json = wc.DownloadString("https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=" + i);
 
                     jArray = JObject.Parse(json);
-
+                    if (i == icount - 1)
+                    {
+                        Loading.loading.loadLabel2.Text =  "100%";
+                        Loading.loading.loadLabel2.Refresh();
+                    }
+                    else
+                    {
+                        Loading.loading.loadLabel2.Text = (int)sumpercent + "%";
+                        Loading.loading.loadLabel2.Refresh();
+                        if (i % 10 == 0) { 
+                            Loading.loading.loadLabel1.Text = "저장중" + ldlabel[labelcount];
+                            Loading.loading.loadLabel1.Refresh();
+                            labelcount++;
+                        }
+                        if (labelcount == 4)
+                            labelcount = 0;
+                       
+                        sumpercent += percent;
+                    }
+                    
+                    Console.WriteLine(sumpercent);
                     //string.IsNullOrEmpty()//값이 null 이면 true
 
                     addJson += jArray;    // 하나의 텍스트에 다넣고 싶은데 .. 흠 나중에 불러올때 어떻게 해야 하는지 모르겠다...
@@ -69,7 +108,7 @@ namespace Lotto2.json
                     {
                         addJson += ",\n";
                     }
-
+                    
                     //Console.WriteLine(jArray);
 
                     /*string num1 = null;
@@ -85,12 +124,12 @@ namespace Lotto2.json
                 File.WriteAllText(@"./LottoNum.json", addJson);
                 MessageBox.Show("폴더에 json파일 저장이 완료되었습니다.");
 
-                
-
+                Loading.loading.Close();
+                LoadJson();
             }
         }
        
-
+        //경로에 있는 json 파일 불러오기
         public static void LoadJson()
         {
            
@@ -162,6 +201,7 @@ namespace Lotto2.json
         }
         //Probability
 
+        // 로또 번호별 당첨 횟수
         public int[] numCount()
         {
             int[] numct = new int[45];
