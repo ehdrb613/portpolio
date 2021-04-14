@@ -171,18 +171,20 @@ namespace Lotto2
                 timer1.Stop();
                 return;
             }
-
-
-
-            // Console.WriteLine($"번호 {i + 1} 나온 횟수 : {dm.numCount()[i]}개");
-
-            lottoNumlist.Items.Add(i.ToString()).Text ="번호" + (i + 1) + " : " + dm.numCount()[i] + "개";
             
-            lottoChart.Series[0].Points.AddXY(i + 1, dm.numCount()[i]);
+           
+            if(lottoChart.Series[0].Points.Count < 45)
+            {
 
-            i++;
+                // Console.WriteLine($"번호 {i + 1} 나온 횟수 : {dm.numCount()[i]}개");
 
+                lottoNumlist.Items.Add(i.ToString()).Text ="번호" + (i + 1) + " : " + dm.numCount()[i] + "개";
             
+                lottoChart.Series[0].Points.AddXY(i + 1, dm.numCount()[i]);
+
+                i++;
+            }
+
             //Thread.Sleep(500);
 
         }
