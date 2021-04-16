@@ -1,0 +1,10 @@
+D:\DG\portpolio\Managing_Car\Managing_Car_Program\Managing_Car_Program\bin\Debug\Managing_Car_Program.exe.config
+D:\DG\portpolio\Managing_Car\Managing_Car_Program\Managing_Car_Program\bin\Debug\Managing_Car_Program.exe
+D:\DG\portpolio\Managing_Car\Managing_Car_Program\Managing_Car_Program\bin\Debug\Managing_Car_Program.pdb
+D:\DG\portpolio\Managing_Car\Managing_Car_Program\Managing_Car_Program\obj\Debug\Managing_Car_Program.Form1.resources
+D:\DG\portpolio\Managing_Car\Managing_Car_Program\Managing_Car_Program\obj\Debug\Managing_Car_Program.Properties.Resources.resources
+D:\DG\portpolio\Managing_Car\Managing_Car_Program\Managing_Car_Program\obj\Debug\Managing_Car_Program.csproj.GenerateResource.cache
+D:\DG\portpolio\Managing_Car\Managing_Car_Program\Managing_Car_Program\obj\Debug\Managing_Car_Program.csproj.CoreCompileInputs.cache
+D:\DG\portpolio\Managing_Car\Managing_Car_Program\Managing_Car_Program\obj\Debug\Managing_Car_Program.exe
+D:\DG\portpolio\Managing_Car\Managing_Car_Program\Managing_Car_Program\obj\Debug\Managing_Car_Program.pdb
+D:\DG\portpolio\Managing_Car\Managing_Car_Program\Managing_Car_Program\obj\Debug\Managing_Car_Program.csprojAssemblyReference.cache
