@@ -55,7 +55,7 @@ namespace Lotto2
             // labelNum6
             // 
             this.labelNum6.AutoSize = true;
-            this.labelNum6.Location = new System.Drawing.Point(564, 32);
+            this.labelNum6.Location = new System.Drawing.Point(564, 253);
             this.labelNum6.Name = "labelNum6";
             this.labelNum6.Size = new System.Drawing.Size(11, 12);
             this.labelNum6.TabIndex = 10;
@@ -64,7 +64,7 @@ namespace Lotto2
             // labelNum5
             // 
             this.labelNum5.AutoSize = true;
-            this.labelNum5.Location = new System.Drawing.Point(497, 32);
+            this.labelNum5.Location = new System.Drawing.Point(497, 253);
             this.labelNum5.Name = "labelNum5";
             this.labelNum5.Size = new System.Drawing.Size(11, 12);
             this.labelNum5.TabIndex = 11;
@@ -73,7 +73,7 @@ namespace Lotto2
             // labelNum4
             // 
             this.labelNum4.AutoSize = true;
-            this.labelNum4.Location = new System.Drawing.Point(430, 32);
+            this.labelNum4.Location = new System.Drawing.Point(430, 253);
             this.labelNum4.Name = "labelNum4";
             this.labelNum4.Size = new System.Drawing.Size(11, 12);
             this.labelNum4.TabIndex = 12;
@@ -82,7 +82,7 @@ namespace Lotto2
             // labelNum3
             // 
             this.labelNum3.AutoSize = true;
-            this.labelNum3.Location = new System.Drawing.Point(363, 32);
+            this.labelNum3.Location = new System.Drawing.Point(363, 253);
             this.labelNum3.Name = "labelNum3";
             this.labelNum3.Size = new System.Drawing.Size(11, 12);
             this.labelNum3.TabIndex = 13;
@@ -91,7 +91,7 @@ namespace Lotto2
             // labelNum2
             // 
             this.labelNum2.AutoSize = true;
-            this.labelNum2.Location = new System.Drawing.Point(296, 32);
+            this.labelNum2.Location = new System.Drawing.Point(296, 253);
             this.labelNum2.Name = "labelNum2";
             this.labelNum2.Size = new System.Drawing.Size(11, 12);
             this.labelNum2.TabIndex = 14;
@@ -100,7 +100,7 @@ namespace Lotto2
             // labelNum1
             // 
             this.labelNum1.AutoSize = true;
-            this.labelNum1.Location = new System.Drawing.Point(229, 32);
+            this.labelNum1.Location = new System.Drawing.Point(229, 253);
             this.labelNum1.Name = "labelNum1";
             this.labelNum1.Size = new System.Drawing.Size(11, 12);
             this.labelNum1.TabIndex = 15;
@@ -108,7 +108,7 @@ namespace Lotto2
             // 
             // button_test
             // 
-            this.button_test.Location = new System.Drawing.Point(34, 21);
+            this.button_test.Location = new System.Drawing.Point(34, 242);
             this.button_test.Name = "button_test";
             this.button_test.Size = new System.Drawing.Size(176, 23);
             this.button_test.TabIndex = 9;
@@ -118,10 +118,10 @@ namespace Lotto2
             // 
             // lottoJsonBtn
             // 
-            this.lottoJsonBtn.Location = new System.Drawing.Point(871, 619);
+            this.lottoJsonBtn.Location = new System.Drawing.Point(1011, 12);
             this.lottoJsonBtn.Name = "lottoJsonBtn";
-            this.lottoJsonBtn.Size = new System.Drawing.Size(237, 44);
-            this.lottoJsonBtn.TabIndex = 18;
+            this.lottoJsonBtn.Size = new System.Drawing.Size(127, 23);
+            this.lottoJsonBtn.TabIndex = 2;
             this.lottoJsonBtn.Text = "최신 데이터 저장 ";
             this.lottoJsonBtn.UseVisualStyleBackColor = true;
             this.lottoJsonBtn.Click += new System.EventHandler(this.lottoJsonBtn_Click);
@@ -130,9 +130,10 @@ namespace Lotto2
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Enabled = false;
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(12, 343);
+            this.label1.Location = new System.Drawing.Point(29, 445);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(174, 30);
             this.label1.TabIndex = 19;
@@ -142,28 +143,32 @@ namespace Lotto2
             // 
             this.lottoNumlist.BackColor = System.Drawing.Color.White;
             this.lottoNumlist.HideSelection = false;
-            this.lottoNumlist.Location = new System.Drawing.Point(871, 135);
+            this.lottoNumlist.Location = new System.Drawing.Point(982, 41);
             this.lottoNumlist.Name = "lottoNumlist";
-            this.lottoNumlist.Size = new System.Drawing.Size(250, 395);
+            this.lottoNumlist.Size = new System.Drawing.Size(237, 431);
             this.lottoNumlist.TabIndex = 20;
+            this.lottoNumlist.TabStop = false;
             this.lottoNumlist.UseCompatibleStateImageBehavior = false;
             this.lottoNumlist.View = System.Windows.Forms.View.SmallIcon;
             // 
             // JsonLoadBtn
             // 
-            this.JsonLoadBtn.Location = new System.Drawing.Point(871, 557);
+            this.JsonLoadBtn.BackColor = System.Drawing.Color.LightGreen;
+            this.JsonLoadBtn.FlatAppearance.BorderSize = 0;
+            this.JsonLoadBtn.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.JsonLoadBtn.Location = new System.Drawing.Point(852, 12);
             this.JsonLoadBtn.Name = "JsonLoadBtn";
-            this.JsonLoadBtn.Size = new System.Drawing.Size(237, 56);
-            this.JsonLoadBtn.TabIndex = 21;
+            this.JsonLoadBtn.Size = new System.Drawing.Size(153, 23);
+            this.JsonLoadBtn.TabIndex = 1;
             this.JsonLoadBtn.Text = "저장된 json 불러오기";
-            this.JsonLoadBtn.UseVisualStyleBackColor = true;
+            this.JsonLoadBtn.UseVisualStyleBackColor = false;
             this.JsonLoadBtn.Click += new System.EventHandler(this.JsonLoadBtn_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label2.Location = new System.Drawing.Point(239, 358);
+            this.label2.Location = new System.Drawing.Point(32, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 12);
             this.label2.TabIndex = 22;
@@ -172,7 +177,7 @@ namespace Lotto2
             // winNum
             // 
             this.winNum.AutoSize = true;
-            this.winNum.Location = new System.Drawing.Point(310, 358);
+            this.winNum.Location = new System.Drawing.Point(103, 23);
             this.winNum.Name = "winNum";
             this.winNum.Size = new System.Drawing.Size(11, 12);
             this.winNum.TabIndex = 23;
@@ -181,6 +186,7 @@ namespace Lotto2
             // lottoChart
             // 
             this.lottoChart.BackColor = System.Drawing.Color.Azure;
+            this.lottoChart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.lottoChart.BorderlineColor = System.Drawing.Color.Transparent;
             this.lottoChart.BorderSkin.BackColor = System.Drawing.Color.Transparent;
             this.lottoChart.BorderSkin.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
@@ -190,9 +196,10 @@ namespace Lotto2
             chartArea1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
             chartArea1.Name = "ChartArea1";
             this.lottoChart.ChartAreas.Add(chartArea1);
+            legend1.AutoFitMinFontSize = 5;
             legend1.Name = "Legend1";
             this.lottoChart.Legends.Add(legend1);
-            this.lottoChart.Location = new System.Drawing.Point(12, 388);
+            this.lottoChart.Location = new System.Drawing.Point(12, 478);
             this.lottoChart.Name = "lottoChart";
             this.lottoChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             series1.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Top;
@@ -209,16 +216,18 @@ namespace Lotto2
             series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
             series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
             this.lottoChart.Series.Add(series1);
-            this.lottoChart.Size = new System.Drawing.Size(816, 284);
+            this.lottoChart.Size = new System.Drawing.Size(1219, 324);
             this.lottoChart.TabIndex = 24;
+            this.lottoChart.TabStop = false;
             this.lottoChart.Text = "번호별 통계";
+            this.lottoChart.UseWaitCursor = true;
             // 
             // exit
             // 
-            this.exit.Location = new System.Drawing.Point(1046, 21);
+            this.exit.Location = new System.Drawing.Point(1144, 12);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(75, 23);
-            this.exit.TabIndex = 25;
+            this.exit.TabIndex = 3;
             this.exit.Text = "닫기";
             this.exit.UseVisualStyleBackColor = true;
             this.exit.Click += new System.EventHandler(this.exit_Click);
@@ -228,7 +237,7 @@ namespace Lotto2
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1143, 684);
+            this.ClientSize = new System.Drawing.Size(1243, 803);
             this.ControlBox = false;
             this.Controls.Add(this.exit);
             this.Controls.Add(this.lottoChart);
