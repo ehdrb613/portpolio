@@ -49,7 +49,7 @@ namespace Lotto2
             if (File_Check.Exists)
             {
                 DataManager.LoadJson();
-                dm.numCount();
+                DataManager.numCount();
                 timer1.Interval = 100;      // 0.1초
                
                 timer1.Tick += new EventHandler(timer1_Tick);
@@ -65,7 +65,7 @@ namespace Lotto2
 
 
 
-            int count = DataManager.lottoNums.Count - 1;
+            int count = DataManager.lottoNums.Count - 1; //최신 회차
 
             winNum.Text = $"{DataManager.lottoNums[count].drwNo} 회차  " +
                 $"{DataManager.lottoNums[count].drwtNo1}," +
@@ -90,11 +90,10 @@ namespace Lotto2
             new Loading().ShowDialog();
 
             DataManager.LoadJson();
-            dm.numCount();
+            DataManager.numCount();
 
 
 
-            lottoNumlist.Items.Clear();
             lottoNumlist.Items.Clear();
             lottoChart.Series[0].Points.Clear();//초기화
 
@@ -165,7 +164,7 @@ namespace Lotto2
         {
             // if (lottoChart.Series[0] > 10) // x축은 10개까지만 값을 출력하게 한다.
 
-            if (i >= dm.numCount().Length)
+            if (i >= DataManager.numCount().Length)
             {
                 i = 0; //다시 누를때 차트번호 초기화
                 timer1.Stop();
@@ -178,9 +177,9 @@ namespace Lotto2
 
                 // Console.WriteLine($"번호 {i + 1} 나온 횟수 : {dm.numCount()[i]}개");
 
-                lottoNumlist.Items.Add(i.ToString()).Text ="번호" + (i + 1) + " : " + dm.numCount()[i] + "개";
+                lottoNumlist.Items.Add(i.ToString()).Text ="번호" + (i + 1) + " : " + DataManager.numCount()[i] + "개";
             
-                lottoChart.Series[0].Points.AddXY(i + 1, dm.numCount()[i]);
+                lottoChart.Series[0].Points.AddXY(i + 1, DataManager.numCount()[i]);
 
                 i++;
             }

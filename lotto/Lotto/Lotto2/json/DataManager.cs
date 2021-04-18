@@ -209,7 +209,7 @@ namespace Lotto2.json
         //Probability
 
         // 로또 번호별 당첨 횟수
-        public int[] numCount()
+        public static int[] numCount()
         {
             int[] numct = new int[45];
             

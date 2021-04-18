@@ -30,9 +30,9 @@ namespace Lotto2
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.labelNum6 = new System.Windows.Forms.Label();
             this.labelNum5 = new System.Windows.Forms.Label();
             this.labelNum4 = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@ namespace Lotto2
             // labelNum6
             // 
             this.labelNum6.AutoSize = true;
-            this.labelNum6.Location = new System.Drawing.Point(564, 253);
+            this.labelNum6.Location = new System.Drawing.Point(557, 92);
             this.labelNum6.Name = "labelNum6";
             this.labelNum6.Size = new System.Drawing.Size(11, 12);
             this.labelNum6.TabIndex = 10;
@@ -64,7 +64,7 @@ namespace Lotto2
             // labelNum5
             // 
             this.labelNum5.AutoSize = true;
-            this.labelNum5.Location = new System.Drawing.Point(497, 253);
+            this.labelNum5.Location = new System.Drawing.Point(490, 92);
             this.labelNum5.Name = "labelNum5";
             this.labelNum5.Size = new System.Drawing.Size(11, 12);
             this.labelNum5.TabIndex = 11;
@@ -73,7 +73,7 @@ namespace Lotto2
             // labelNum4
             // 
             this.labelNum4.AutoSize = true;
-            this.labelNum4.Location = new System.Drawing.Point(430, 253);
+            this.labelNum4.Location = new System.Drawing.Point(423, 92);
             this.labelNum4.Name = "labelNum4";
             this.labelNum4.Size = new System.Drawing.Size(11, 12);
             this.labelNum4.TabIndex = 12;
@@ -82,7 +82,7 @@ namespace Lotto2
             // labelNum3
             // 
             this.labelNum3.AutoSize = true;
-            this.labelNum3.Location = new System.Drawing.Point(363, 253);
+            this.labelNum3.Location = new System.Drawing.Point(356, 92);
             this.labelNum3.Name = "labelNum3";
             this.labelNum3.Size = new System.Drawing.Size(11, 12);
             this.labelNum3.TabIndex = 13;
@@ -91,7 +91,7 @@ namespace Lotto2
             // labelNum2
             // 
             this.labelNum2.AutoSize = true;
-            this.labelNum2.Location = new System.Drawing.Point(296, 253);
+            this.labelNum2.Location = new System.Drawing.Point(289, 92);
             this.labelNum2.Name = "labelNum2";
             this.labelNum2.Size = new System.Drawing.Size(11, 12);
             this.labelNum2.TabIndex = 14;
@@ -100,7 +100,7 @@ namespace Lotto2
             // labelNum1
             // 
             this.labelNum1.AutoSize = true;
-            this.labelNum1.Location = new System.Drawing.Point(229, 253);
+            this.labelNum1.Location = new System.Drawing.Point(222, 92);
             this.labelNum1.Name = "labelNum1";
             this.labelNum1.Size = new System.Drawing.Size(11, 12);
             this.labelNum1.TabIndex = 15;
@@ -108,7 +108,7 @@ namespace Lotto2
             // 
             // button_test
             // 
-            this.button_test.Location = new System.Drawing.Point(34, 242);
+            this.button_test.Location = new System.Drawing.Point(27, 81);
             this.button_test.Name = "button_test";
             this.button_test.Size = new System.Drawing.Size(176, 23);
             this.button_test.TabIndex = 9;
@@ -192,30 +192,30 @@ namespace Lotto2
             this.lottoChart.BorderSkin.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             this.lottoChart.BorderSkin.PageColor = System.Drawing.Color.Transparent;
             this.lottoChart.BorderSkin.SkinStyle = System.Windows.Forms.DataVisualization.Charting.BorderSkinStyle.Emboss;
-            chartArea1.BackColor = System.Drawing.Color.Transparent;
-            chartArea1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            chartArea1.Name = "ChartArea1";
-            this.lottoChart.ChartAreas.Add(chartArea1);
-            legend1.AutoFitMinFontSize = 5;
-            legend1.Name = "Legend1";
-            this.lottoChart.Legends.Add(legend1);
+            chartArea2.BackColor = System.Drawing.Color.Transparent;
+            chartArea2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            chartArea2.Name = "ChartArea1";
+            this.lottoChart.ChartAreas.Add(chartArea2);
+            legend2.AutoFitMinFontSize = 5;
+            legend2.Name = "Legend1";
+            this.lottoChart.Legends.Add(legend2);
             this.lottoChart.Location = new System.Drawing.Point(12, 478);
             this.lottoChart.Name = "lottoChart";
             this.lottoChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series1.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Top;
-            series1.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series1.ChartArea = "ChartArea1";
-            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.IsValueShownAsLabel = true;
-            series1.IsVisibleInLegend = false;
-            series1.LabelBackColor = System.Drawing.Color.Transparent;
-            series1.LabelBorderColor = System.Drawing.Color.Transparent;
-            series1.Legend = "Legend1";
-            series1.MarkerSize = 1;
-            series1.Name = "Series1";
-            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
-            series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            this.lottoChart.Series.Add(series1);
+            series2.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Top;
+            series2.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series2.ChartArea = "ChartArea1";
+            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.IsValueShownAsLabel = true;
+            series2.IsVisibleInLegend = false;
+            series2.LabelBackColor = System.Drawing.Color.Transparent;
+            series2.LabelBorderColor = System.Drawing.Color.Transparent;
+            series2.Legend = "Legend1";
+            series2.MarkerSize = 1;
+            series2.Name = "Series1";
+            series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
+            series2.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            this.lottoChart.Series.Add(series2);
             this.lottoChart.Size = new System.Drawing.Size(1219, 324);
             this.lottoChart.TabIndex = 24;
             this.lottoChart.TabStop = false;
