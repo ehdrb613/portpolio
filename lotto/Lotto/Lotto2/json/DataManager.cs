@@ -15,7 +15,10 @@ namespace Lotto2.json
     {
        public static List<LottoNum> lottoNums = new List<LottoNum>();
       
-
+        /*static DataManager()
+        {
+            LoadJson();
+        }*/
 
 
 
@@ -125,7 +128,9 @@ namespace Lotto2.json
                 MessageBox.Show("폴더에 json파일 저장이 완료되었습니다.");
 
                 Loading.loading.Close();
+                
                 LoadJson();
+
             }
         }
        
@@ -200,6 +205,7 @@ namespace Lotto2.json
             catch (Exception)
             {
                 MessageBox.Show("LottoNum 파일이 누락되었습니다!!!");
+                urlJsonLoad();
                 // CreateFile(); //파일 새로 만들기
                 //SaveJson();
                 //LoadJson();
@@ -227,25 +233,25 @@ namespace Lotto2.json
                 }
 
             }
-           /* for (int i = 0; i < numct.Length; i++)
-            {
-                Console.WriteLine($"번호 {i+1} 나온 횟수 : {numct[i]}개");
-            }*/
+        
             return numct;
         }
 
-        //확인용
-        public static void lottoWin()
+        public static void printLog(string contents, string name = "LottoHistory")
         {
-            //Console.Write(lottoNums[lottoNums.Count-1].drwNo + "회차");
-            //Console.Write(lottoNums[lottoNums.Count - 1].drwtNo1 + ",");
-            //Console.Write(lottoNums[lottoNums.Count - 1].drwtNo2 + ",");
-            //Console.Write(lottoNums[lottoNums.Count - 1].drwtNo3 + ",");
-            //Console.Write(lottoNums[lottoNums.Count - 1].drwtNo4 + ",");
-            //Console.Write(lottoNums[lottoNums.Count - 1].drwtNo5 + ",");
-            //Console.WriteLine(lottoNums[lottoNums.Count - 1].drwtNo6);
+            DirectoryInfo di = new DirectoryInfo("LottoHistory");
+            
+            if (!di.Exists)
+            {
+                di.Create();//폴더 만들기
+            }
 
-          
+            //using (StreamWriter writer = new StreamWriter(@"parkingHistory\parkingHistory.txt",true))
+            using (StreamWriter writer = new StreamWriter(@"LottoHistory\" + name + ".txt", true))
+            {
+                writer.WriteLine(contents);
+            }
         }
+
     }
 }

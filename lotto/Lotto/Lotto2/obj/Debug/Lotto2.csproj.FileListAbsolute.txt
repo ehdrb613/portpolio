@@ -28,3 +28,7 @@ D:\DG\portpolio\lotto\Lotto\Lotto2\obj\Debug\Lotto2.exe
 D:\DG\portpolio\lotto\Lotto\Lotto2\obj\Debug\Lotto2.pdb
 D:\DG\portpolio\lotto\Lotto\Lotto2\obj\Debug\Lotto2.Loading.resources
 D:\study\portpolio\lotto\Lotto\Lotto2\obj\Debug\Lotto2.Loading.resources
+D:\DG\portpolio\lotto\Lotto\Lotto2\bin\Debug\CxFlatUI.dll
+D:\DG\portpolio\lotto\Lotto\Lotto2\bin\Debug\MaterialSkin.dll
+D:\DG\portpolio\lotto\Lotto\Lotto2\bin\Debug\SunnyUI.Common.dll
+D:\DG\portpolio\lotto\Lotto\Lotto2\bin\Debug\SunnyUI.dll

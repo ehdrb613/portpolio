@@ -281,3 +281,27 @@
    위치: System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
    위치: System.IO.File.ReadAllText(String path)
    위치: Managing_Car_Program.Datamanger.Load() 파일 D:\DG\portpolio\Managing_Car\Managing_Car_Program\Managing_Car_Program\Datamanger.cs:줄 35
+[2021-04-19 10:25:31]주차 버튼 클릭
+[2021-04-19 10:25:33]해당 공간에는 이미 차 있어요1
+[2021-04-19 10:25:36]주차 버튼 클릭
+[2021-04-19 10:35:55]주차 버튼 클릭
+[2021-04-19 10:35:56]주차 할 수 없습니다.aa
+[2021-04-19 10:35:56]시퀀스에 일치하는 요소가 없습니다.
+[2021-04-19 10:35:56]   위치: System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   위치: Managing_Car_Program.Form1.button1_Click(Object sender, EventArgs e) 파일 D:\DG\portpolio\Managing_Car\Managing_Car_Program\Managing_Car_Program\Form1.cs:줄 60
+[2021-04-19 10:36:08]주차 버튼 클릭
+[2021-04-19 10:36:10]주차 할 수 없습니다.6
+[2021-04-19 10:36:10]시퀀스에 일치하는 요소가 없습니다.
+[2021-04-19 10:36:10]   위치: System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   위치: Managing_Car_Program.Form1.button1_Click(Object sender, EventArgs e) 파일 D:\DG\portpolio\Managing_Car\Managing_Car_Program\Managing_Car_Program\Form1.cs:줄 60
+[2021-04-19 10:57:13]출차 버튼 클릭
+[2021-04-19 10:57:43]주차 버튼 클릭
+[2021-04-19 11:43:45]주차 버튼 클릭
+[2021-04-19 11:43:57]출차 버튼 클릭
+[2021-04-19 12:26:08]조회-공간있음번
+[2021-04-19 12:27:07]조회-공간있음3번
+[2021-04-19 12:27:30]값이 없음
+[2021-04-19 12:27:30]시퀀스에 일치하는 요소가 없습니다.
+[2021-04-19 12:27:30]   위치: System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   위치: Managing_Car_Program.Form1.button3_Click(Object sender, EventArgs e) 파일 D:\DG\portpolio\Managing_Car\Managing_Car_Program\Managing_Car_Program\Form1.cs:줄 151
+[2021-04-19 12:27:40]조회-공간있음3번

@@ -40,7 +40,7 @@ namespace Lotto2
             labelNum4.Text = r.Next(10).ToString();
             labelNum5.Text = r.Next(10).ToString();
             labelNum6.Text = r.Next(10).ToString();
-
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -49,9 +49,11 @@ namespace Lotto2
             if (File_Check.Exists)
             {
                 DataManager.LoadJson();
+                writeLog("Lottonum.json 불러오기 완료", DateTime.Now.ToString("yyyy_MM_dd"));
                 DataManager.numCount();
+                writeLog("번호 별 나온 횟수 계산", DateTime.Now.ToString("yyyy_MM_dd"));
+
                 timer1.Interval = 100;      // 0.1초
-               
                 timer1.Tick += new EventHandler(timer1_Tick);
                 timer1.Start();
                
@@ -60,24 +62,35 @@ namespace Lotto2
             {
              
                 new Loading().ShowDialog();//로딩화면
+                writeLog("Lottonum.json 저장 완료", DateTime.Now.ToString("yyyy_MM_dd"));
+
+
             }
-          
+
 
 
 
             int count = DataManager.lottoNums.Count - 1; //최신 회차
 
-            winNum.Text = $"{DataManager.lottoNums[count].drwNo} 회차  " +
-                $"{DataManager.lottoNums[count].drwtNo1}," +
-                $"{DataManager.lottoNums[count].drwtNo2}," +
-                $"{DataManager.lottoNums[count].drwtNo3}," +
-                $"{DataManager.lottoNums[count].drwtNo4}," +
-                $"{DataManager.lottoNums[count].drwtNo5}," +
-                $"{DataManager.lottoNums[count].drwtNo6}" +
-                $" 보너스:{DataManager.lottoNums[count].bnusNo}" +
+            winNum.Text = $"{DataManager.lottoNums[count].drwNo} 회차 " +
                 $" (날짜 :{DataManager.lottoNums[count].drwNoDate})";
 
-            
+   
+            pBoxLuckNum1.Load(@"./Nimg/num" + DataManager.lottoNums[count].drwtNo1 + ".png");
+            pBoxLuckNum1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pBoxLuckNum2.Load(@"./Nimg/num" + DataManager.lottoNums[count].drwtNo2 + ".png");
+            pBoxLuckNum2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pBoxLuckNum3.Load(@"./Nimg/num" + DataManager.lottoNums[count].drwtNo3 + ".png");
+            pBoxLuckNum3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pBoxLuckNum4.Load(@"./Nimg/num" + DataManager.lottoNums[count].drwtNo4 + ".png");
+            pBoxLuckNum4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pBoxLuckNum5.Load(@"./Nimg/num" + DataManager.lottoNums[count].drwtNo5 + ".png");
+            pBoxLuckNum5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pBoxLuckNum6.Load(@"./Nimg/num" + DataManager.lottoNums[count].drwtNo6 + ".png");
+            pBoxLuckNum6.SizeMode = PictureBoxSizeMode.StretchImage;
+
+
+
         }
 
 
@@ -187,11 +200,22 @@ namespace Lotto2
             //Thread.Sleep(500);
 
         }
+        private void writeLog(string contens, string date)
+        {
+            //int a = 1;
+            //MessageBox.Show(a.ToString("00"));//01 이라고 출력됨, 3자리 이상 그대로 출력
+            string logContens = $"[{DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")}]{contens}";
+
+            
+            DataManager.printLog(logContens, date);
+        }
 
         private void exit_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+       
     }
 }
 

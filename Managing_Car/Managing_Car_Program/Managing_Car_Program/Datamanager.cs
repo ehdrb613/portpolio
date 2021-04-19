@@ -8,11 +8,11 @@ using System.Xml.Linq;
 
 namespace Managing_Car_Program
 {
-    class Datamanger
+    class Datamanager
     {
         public static List<parkingcar> Cars = new List<parkingcar>();
 
-        static Datamanger()
+        static Datamanager()
         {
             Load();
 
@@ -74,7 +74,7 @@ namespace Managing_Car_Program
             StreamWriter writer = File.CreateText(fileName); // 파일이 없으면 해당 파일 생성
             writer.Dispose();//메모리 해제
         }
-        private static void Save()
+        public static void Save()
         {
             string booksOutput = "";
             booksOutput += "<cars>\n";
