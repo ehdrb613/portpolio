@@ -50,13 +50,13 @@ namespace Managing_Car_Program
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.parkingcarBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.parkingSpotDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.carNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.driverNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.parkingTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.parkingcarBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -256,19 +256,6 @@ namespace Managing_Car_Program
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // parkingcarBindingSource
-            // 
-            this.parkingcarBindingSource.DataSource = typeof(Managing_Car_Program.parkingcar);
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 12;
-            this.listBox1.Location = new System.Drawing.Point(24, 458);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(780, 148);
-            this.listBox1.TabIndex = 0;
-            // 
             // parkingSpotDataGridViewTextBoxColumn
             // 
             this.parkingSpotDataGridViewTextBoxColumn.DataPropertyName = "parkingSpot";
@@ -298,6 +285,19 @@ namespace Managing_Car_Program
             this.parkingTimeDataGridViewTextBoxColumn.DataPropertyName = "parkingTime";
             this.parkingTimeDataGridViewTextBoxColumn.HeaderText = "parkingTime";
             this.parkingTimeDataGridViewTextBoxColumn.Name = "parkingTimeDataGridViewTextBoxColumn";
+            // 
+            // parkingcarBindingSource
+            // 
+            this.parkingcarBindingSource.DataSource = typeof(Managing_Car_Program.parkingcar);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 12;
+            this.listBox1.Location = new System.Drawing.Point(24, 458);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(780, 148);
+            this.listBox1.TabIndex = 0;
             // 
             // Form1
             // 
