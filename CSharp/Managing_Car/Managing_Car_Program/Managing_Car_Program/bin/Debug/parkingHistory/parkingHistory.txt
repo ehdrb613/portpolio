@@ -305,3 +305,5 @@
 [2021-04-19 12:27:30]   위치: System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
    위치: Managing_Car_Program.Form1.button3_Click(Object sender, EventArgs e) 파일 D:\DG\portpolio\Managing_Car\Managing_Car_Program\Managing_Car_Program\Form1.cs:줄 151
 [2021-04-19 12:27:40]조회-공간있음3번
+[2021-05-04 14:22:24]출차 버튼 클릭
+[2021-05-04 14:22:36]주차 버튼 클릭

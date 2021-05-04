@@ -23,3 +23,14 @@ D:\DG\portpolio\Twelveyear\obj\Debug\Twelveyear.csproj.CoreCompileInputs.cache
 D:\DG\portpolio\Twelveyear\obj\Debug\Twelveyear.csproj.CopyComplete
 D:\DG\portpolio\Twelveyear\obj\Debug\WindowsFormsApp1.exe
 D:\DG\portpolio\Twelveyear\obj\Debug\WindowsFormsApp1.pdb
+D:\study\portpolio\CSharp\Twelveyear\bin\Debug\WindowsFormsApp1.exe.config
+D:\study\portpolio\CSharp\Twelveyear\bin\Debug\WindowsFormsApp1.exe
+D:\study\portpolio\CSharp\Twelveyear\bin\Debug\WindowsFormsApp1.pdb
+D:\study\portpolio\CSharp\Twelveyear\obj\Debug\Twelveyear.csprojAssemblyReference.cache
+D:\study\portpolio\CSharp\Twelveyear\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\study\portpolio\CSharp\Twelveyear\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\study\portpolio\CSharp\Twelveyear\obj\Debug\Twelveyear.csproj.GenerateResource.cache
+D:\study\portpolio\CSharp\Twelveyear\obj\Debug\Twelveyear.csproj.CoreCompileInputs.cache
+D:\study\portpolio\CSharp\Twelveyear\obj\Debug\Twelveyear.csproj.CopyComplete
+D:\study\portpolio\CSharp\Twelveyear\obj\Debug\WindowsFormsApp1.exe
+D:\study\portpolio\CSharp\Twelveyear\obj\Debug\WindowsFormsApp1.pdb

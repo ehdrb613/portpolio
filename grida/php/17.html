@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<!--20170417 1201289 _ 진성현  웹페이지 레이아웃 -->
+	<head>
+		<title>20170417 웹페이지 레이아웃 진성현</title>
+		<meta charset="UTF-8">
+		<!-- -->
+		<style>
+			*{margin:0; padding:0;}
+			body {font-family:'Arial';}
+			li	 {list-style:none;}
+			a	 {text-decoration:none; color:black;}
+			img	 {border:0;}
+		</style>
+		<style>
+			/*선택자 {속석명1:속성값; 속성명2:속성값;}*/
+			header{width:960px; height:160px; 
+					margin: 0 auto ; /* 중간정렬 */
+					background-color:skyblue; position:relative ;}
+											}
+			header > #header_title {position:absolute; left:20px ; top:30px; }
+			
+			header > #header_gnb	{position:absolute; right:0px ; top:0px; }
+			
+			header > #header_lnb	{position:absolute; right:0px ; bottom:10px; }
+
+			
+			li { float: right;}
+			
+		
+			
+		</style>
+			
+		<style>	
+			footer{width:960px; height:160px; background-color: red;
+			margin: 0 auto ; }
+
+		</style>
+
+		<style>
+			#content_section{width :960px; height: 160px;
+								background-color: yellow; margin: 0 auto ; }
+	    </style>
+		
+		
+		<style>
+		#content_aside{width: 960px; height :160px; background-color: pink;}
+			
+		
+		</style>
+	
+	
+	</head>
+	
+	
+	
+	<body>
+	<!-- body 시작 -->
+	
+	
+	 <header> 
+		<div id="header_title">title</div>
+
+		<nav id="header_gnb">
+			<ul>
+					<li><a href="#">web</li>
+					<li><a href="#">mobile</li>
+					<li><a href="#">Game</li>
+					<li><a href="#">Simulation</li>
+					<li><a href="#">Data</li>
+			</ul>
+			
+		</nav>
+		
+		<nav id="header_lnb">local menu
+		<li><a href="#"> HTML</a> </li>
+		<li><a href="#"> css3</a> </li>
+		<li><a href="#"> game</a> </li>
+		<li><a href="#"> situnation</a> </li>
+		<li><a href="#"> data</a> </li>
+		
+		</nav>
+	 </header>
+	 
+	
+	 <div id="content"></div> 
+		<section id="content_section">
+
+			<article class="section_article">content section article 1</article>
+			<article class="section_article">content section article 2</article>
+			<article class="section_article">content section article 3</article>
+				
+	 
+		</section>
+	
+	 
+	 <!-- footer 부분 -->
+	 <footer>footer</footer>
+	
+	</body>
+
+</html>

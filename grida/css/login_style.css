@@ -1,6 +1,9 @@
-  /* 최소 320px~ 425px (휴대폰) 425~ 768 (테블릿) 그이상 pc모니터 */
   @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-  /*초기화*/
+
+/*초기화*/
+*{ outline:none; 
+  -webkit-appearance:none;}
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -24,6 +27,7 @@ time, mark, audio, video {
 
 body {
     line-height:1;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 article,aside,details,figcaption,figure,
@@ -51,6 +55,7 @@ a {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    -webkit-tap-highlight-color:transparent;
 }
 
 /* change colours to suit your needs */
@@ -96,26 +101,52 @@ input, select {
     vertical-align:middle;
 }
 /*초기화 끝*/
-
+  /* 최소 320px~ 425px (휴대폰) 425~ 768 (테블릿) 그이상 pc모니터 */
+  @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+  
   body{
           background:#7db0e0;
           margin:0;
           text-align:center;
           font-family: 'Nanum Gothic', sans-serif;
          }
-        /*웹 화면*/
-        @media screen and (min-width:768px){
-        .logo{
-           background-image:url("../img/logo.png");
-           background-size:90%;
-           background-repeat: no-repeat;
-           background-position:70%;
-           margin:0 auto;
-            margin-top:40px;
-            margin-bottom:100px;
-            width:800px;
-            height:600px;}
 
+  
+        /*웹 화면*/
+        @media screen and (min-width:1050px){
+          body{
+            margin:0 auto;
+            max-width:40%;
+            min-width:30%;
+            height:auto;
+          }
+          header{
+          position:relative;
+          margin-top:70px auto;
+          width:100%;
+          height:400px;
+        }
+        .logo{
+          margin:0 auto;
+          width:100%;
+          height:100%;
+          padding-top:50px;
+           background-image:url("../img/logo.png");
+           background-size:350px auto;
+           background-repeat: no-repeat;
+           background-position:center;
+           
+            }
+          .img_area{
+            width:30%;
+            height:60px;
+            text-align:center;
+            margin:0 auto;
+            background-image:url("../img/cell.png");
+            background-size:100px auto;
+            background-repeat: no-repeat;
+            background-position:center;
+          }
         img:nth-child(1){
           width:150px; height:150px;
           margin:5%;
@@ -127,22 +158,39 @@ input, select {
         }
       }
 
-        /*테블릿 화면*/
-        @media screen and (min-width:425px) and (max-width:768px){
+        /*테블릿 화면 */
+        @media screen  and (min-width:500px) and (max-width:1050px)  {
+          body{
+            margin:0 auto;
+           width:100%;
+            height:auto;
+          }
+          header{
+          position:relative;
+          margin-top:70px auto;
+          width:100%;
+          height:400px;
+        }
         .logo{
+          margin:0 auto;
+          width:100%;
+          height:100%;
            background-image:url("../img/logo.png");
-           background-size:90%;
+           background-size:500px auto;
            background-repeat: no-repeat;
-           background-position:30px;
-           margin:0 auto;
-            margin-top:60px;
-            margin-bottom:60px;
-            width:80%;
-            height:400px;}
+           background-position:center;
+           
+          }
         .img_area{
+            width:30%;
+            height:60px;
             text-align:center;
             margin:0 auto;
-
+            background-image:url("../img/cell.png");
+            background-size:100px auto;
+            background-repeat: no-repeat;
+            background-position:center;
+            
           }
           img:nth-child(1){
             width:80px; height:80px;
@@ -154,22 +202,38 @@ input, select {
            border-radius:5px;
           }
       }
-
       /*모바일 화면*/
-       @media screen and (min-width:100px) and (max-width:425px){
+      @media screen and (max-width:500px){
+        body{
+            margin:0 auto;
+           width:100%;
+            height:auto;
+          }
+          header{
+          position:relative;
+          margin-top:70px auto;
+          width:100%;
+          height:300px;
+        }
         .logo{
+          margin:0 auto;
+          width:100%;
+          height:100%;
            background-image:url("../img/logo.png");
-           background-size:90%;
+           background-size:300px auto;
            background-repeat: no-repeat;
-           background-position:20px;
-           margin:0 auto;
-            margin-top:40px;
-            margin-bottom:20px;
-            width:90%;
-            height:250px;}
+           background-position:center;
+           
+          }
         .img_area{
+            width:30%;
+            height:60px;
             text-align:center;
             margin:0 auto;
+            background-image:url("../img/cell.png");
+            background-size:100px auto;
+            background-repeat: no-repeat;
+            background-position:center;
 
           }
           img:nth-child(1){
@@ -182,7 +246,18 @@ input, select {
            border-radius:5px;
           }
       }
-
+      
+      section{
+        position:relative;
+        width:100%;
+        height:auto;
+      }
+      section a{
+        color:blue;
+      }
+      section a:visited{
+        text-decoration: none;
+      }
         .input_area{
            width:90%;height:auto;
            text-align:center;
@@ -210,13 +285,34 @@ input, select {
           width:43%;height:40px;
           min-width:120px;
           border:0;margin:2%;
-          background-color:#101641;
+          background-color:#336699;
           color:white; font-size:14px;
           border-radius:10px;
           box-sizing:border-box;
         }
-        
-      
+        input[type="button"]:active{
+          background-color:#3366ee;
+
+        }
+        #login{
+          width:43%;height:40px;
+          min-width:120px;
+          border:0;margin:2%;
+          background-color:#336699;
+          color:white; font-size:14px;
+          border-radius:10px;
+          box-sizing:border-box;
+        }
+        #login:active{
+          background-color:#3366ee;
+         }
+        footer{
+          position:relative;
+          width:100%;
+          margin-top:30px;
+          height:auto;
+        }
+
 
      
         

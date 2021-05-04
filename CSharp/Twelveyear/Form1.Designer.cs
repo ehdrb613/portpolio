@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
             // 
             // year
             // 
-            this.year.Location = new System.Drawing.Point(124, 59);
+            this.year.Location = new System.Drawing.Point(163, 66);
             this.year.Name = "year";
             this.year.Size = new System.Drawing.Size(107, 29);
             this.year.TabIndex = 0;
@@ -56,10 +56,10 @@ namespace WindowsFormsApp1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("HY동녘M", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(25, 65);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(64, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 16);
+            this.label1.Size = new System.Drawing.Size(73, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "태어난 년도";
             // 
@@ -67,8 +67,8 @@ namespace WindowsFormsApp1
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("HY산B", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(267, 46);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Location = new System.Drawing.Point(91, 173);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(189, 70);
             this.label2.TabIndex = 2;
@@ -77,32 +77,32 @@ namespace WindowsFormsApp1
             // pictureBox
             // 
             this.pictureBox.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox.Location = new System.Drawing.Point(469, 35);
+            this.pictureBox.Location = new System.Drawing.Point(384, 35);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(331, 415);
+            this.pictureBox.Size = new System.Drawing.Size(331, 417);
             this.pictureBox.TabIndex = 3;
             this.pictureBox.TabStop = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("HY동녘M", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(237, 65);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(276, 72);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 16);
+            this.label3.Size = new System.Drawing.Size(21, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "년";
             // 
             // monthCalendar
             // 
             this.monthCalendar.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monthCalendar.Location = new System.Drawing.Point(48, 203);
+            this.monthCalendar.Location = new System.Drawing.Point(77, 271);
             this.monthCalendar.Name = "monthCalendar";
             this.monthCalendar.TabIndex = 4;
             // 
             // month
             // 
-            this.month.Location = new System.Drawing.Point(28, 102);
+            this.month.Location = new System.Drawing.Point(67, 109);
             this.month.Name = "month";
             this.month.Size = new System.Drawing.Size(40, 29);
             this.month.TabIndex = 5;
@@ -110,7 +110,7 @@ namespace WindowsFormsApp1
             // 
             // day
             // 
-            this.day.Location = new System.Drawing.Point(104, 102);
+            this.day.Location = new System.Drawing.Point(143, 109);
             this.day.Name = "day";
             this.day.Size = new System.Drawing.Size(42, 29);
             this.day.TabIndex = 5;
@@ -119,20 +119,20 @@ namespace WindowsFormsApp1
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("HY동녘M", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(74, 112);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.Location = new System.Drawing.Point(113, 119);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 16);
+            this.label4.Size = new System.Drawing.Size(21, 20);
             this.label4.TabIndex = 1;
             this.label4.Text = "월";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("HY동녘M", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(152, 112);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.Location = new System.Drawing.Point(191, 119);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(24, 16);
+            this.label5.Size = new System.Drawing.Size(21, 20);
             this.label5.TabIndex = 1;
             this.label5.Text = "일";
             // 
@@ -141,7 +141,7 @@ namespace WindowsFormsApp1
             this.calendarButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.calendarButton.FillColor = System.Drawing.Color.Silver;
             this.calendarButton.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.calendarButton.Location = new System.Drawing.Point(182, 102);
+            this.calendarButton.Location = new System.Drawing.Point(221, 109);
             this.calendarButton.MinimumSize = new System.Drawing.Size(1, 1);
             this.calendarButton.Name = "calendarButton";
             this.calendarButton.RectColor = System.Drawing.Color.Transparent;
@@ -156,7 +156,7 @@ namespace WindowsFormsApp1
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(715, 452);
             this.Controls.Add(this.calendarButton);
             this.Controls.Add(this.day);
             this.Controls.Add(this.month);

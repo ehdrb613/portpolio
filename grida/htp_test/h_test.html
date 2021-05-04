@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>h검사</title>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="../css/htp/h_test_style.css">
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+
+         
+  var time = 0;
+  var running = 0;
+
+  function startPause(){
+   if(running == 0){
+   running = 1;
+   increment();
+   document.getElementById("startPause").innerHTML = "일시정지";
+   }else {
+   running = 0;
+   document.getElementById("startPause").innerHTML = "재시작";
+
+   
+   }
+   
+  }
+
+
+  function reset(){
+   running = 0;
+   time = 0;
+   document.getElementById("startPause").innerHTML = "시작";
+   document.getElementById("output").innerHTML = "00:00:00";
+  }
+
+
+  function increment(){
+   if(running == 1){
+   setTimeout(function(){
+   time++;
+   var mins = Math.floor(time/10/60);
+   var secs = Math.floor(time/10)%60;
+   var tenths = time % 10;
+   
+   if(mins < 10){
+   mins = "0" + mins;
+   }
+   if(secs < 10){
+   secs = "0" + secs;
+
+   }
+
+
+   
+   document.getElementById('output').innerHTML = mins + ":" + secs + ":" + "0" + tenths;
+   increment();
+
+
+   
+   }, 100);
+   
+   }
+
+  }
+
+       </script>
+
+
+</head>
+<body>
+	<header>
+    <div id="return">
+    <a href="../htp_test/htp.php">
+      <img src="../img/화살표2.png"/>
+    </a>
+    </div>
+      <div id="rogo"><img src="../img/logowhite.png"></div>
+      <div id="title">H 그림검사</div>
+    </header>
+    <div id="name">
+            집을 그려주세요
+    </div>
+      
+<!--설명 슬라이드-->
+  <div id=swiper_space>
+  <!-- Swiper -->
+    <div class="swiper-container swiper-container-h">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> <img src="../img/test1.png"/> </div>
+           <div class="swiper-slide"> <img src="../img/h_test1.png"/> </div>
+           <div class="swiper-slide"> <img src="../img/test2.png"/> </div>
+           <div class="swiper-slide"> <img src="../img/test3.png"/> </div>
+        </div>
+        <!-- Add Pagination -->
+        <br><br>
+        <div id = "swiper-button" class="swiper-pagination swiper-pagination-h"></div>
+    </div>
+
+      <!-- Swiper JS -->
+      <script src="../js/swiper.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+      var swiperH = new Swiper('.swiper-container-h', {
+          pagination: '.swiper-pagination-h',
+          paginationClickable: true,
+          spaceBetween: 50
+      });
+      var swiperV = new Swiper('.swiper-container-v', {
+          pagination: '.swiper-pagination-v',
+          paginationClickable: true,
+          direction: 'vertical',
+          spaceBetween: 50
+      });
+      </script>
+    </div>
+
+
+
+    <div id="time_t"><h1>소요 시간<h1></div>
+    <br>
+        	<div id="time">
+					<div id="controls">
+           <output id="output" value ="00 : 00 : 00">00 : 00 : 00</output>
+           <br><Br>
+					<button class="bu1" id="startPause" onclick="startPause()">검사 시작</button>
+          <button class="bu1" id="comtime"  onclick="timecom()">검사 완료</button>
+		   </div>
+       </div>
+                   
+
+<form enctype="multipart/form-data" action="../php/image_save.php" method="post">
+  
+    <!--업로드 용량제한: 50M -->
+    <div id="footer_button">
+    <label id="file" class="bu2" for="ex_file">이미지 첨부</label>
+    <input type="hidden" name="MAX_FILE_SIZE" value="52428800" />
+    <input type="hidden" name="mode" value="upload" />
+    <input type="file" id="ex_file" name="upload" />
+    
+    <input id="qu" class="bu2" type="submit" value="질문으로" />
+</div>
+</form>
+<script>
+var upload = document.getElementsByTagName('input')[0],
+    holder = document.getElementById('holder'),
+    state = document.getElementById('status');
+if (typeof window.FileReader === 'undefined') {
+  state.className = 'fail';
+} else {
+  state.className = 'success';
+  state.innerHTML = '';
+}
+ 
+upload.onchange = function (e) {
+  e.preventDefault();ㅏㅏㅏㅏ
+
+  var file = upload.files[0],
+      reader = new FileReader();
+  reader.onload = function (event) {
+    var img = new Image();
+    img.src = event.target.result;
+  
+  
+      img.width = 320;
+	  img.right = 320;
+ 
+    holder.innerHTML = '';
+    holder.appendChild(img);
+  };
+  reader.readAsDataURL(file);
+
+  return false;
+};
+</script>
+
+        </div>
+
+
+    
+
+<script src="../js/timecom.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+
+</body>
+</html>

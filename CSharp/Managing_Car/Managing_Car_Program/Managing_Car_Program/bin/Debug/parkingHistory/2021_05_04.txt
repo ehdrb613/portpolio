@@ -1,0 +1,2 @@
+[2021-05-04 14:22:25]주차 공간 2에 System.Windows.Forms.TextBox, Text: 30고9484차량 출차
+[2021-05-04 14:22:37]주차 공간 2에 System.Windows.Forms.TextBox, Text: 30고9484차를 주차함

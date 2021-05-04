@@ -1,0 +1,197 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/*초기화*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+a{
+  text-decoration: none;
+}
+body {
+    line-height:1;
+    font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*초기화 끝*/
+
+
+/*웹 화면*/
+        @media all and (min-width:1050px){
+          body{
+      margin:0 auto;
+      max-width:40%;
+      min-width:30%;
+      height:auto;
+      background-size: 40% 40%;
+      background-position:center;
+      box-sizing:border-box;
+      background-color:#7db0e0;
+
+    }
+  }
+
+ /*테블릿, 모바일 화면*/
+ @media all and (max-width:1050px){
+    body{
+      margin:0 auto;
+      width:100%;
+      height:auto;
+      background-size: 100% 100%;
+      box-sizing:border-box;
+      background-color:#7db0e0;
+
+    }
+  }
+    header{
+      position:relative;
+      width: 100%;
+      height: auto;
+      box-sizing:border-box;
+      text-align: center;
+    }
+    #rogo{
+      box-sizing:border-box;
+      width : 30%;
+      display: inline-block;
+      vertical-align:middle;
+      margin: 20px 0px auto;
+    }
+    #rogo img{
+      width : 100%;
+    }
+
+    #return{
+      margin: 10px 20px auto;
+      box-sizing: border-box;
+      width: 5%;
+      float: right;
+    }
+    #return img{
+     width: 100%;
+    }
+
+    #title{
+      font-size : 1.5em;
+      vertical-align:middle;
+      font-weight: 900;
+      color: white;
+      display: inline-block;
+      margin: 20px 0px auto;
+    }
+    #font{
+      font-size: 1.1em;
+      vertical-align:middle;
+      font-weight: 500;
+      color: white;
+      margin: 0px 25px auto;
+    }
+    section{
+      text-align: center;
+    }
+    .sub_title{
+      font-size: 2em;
+      vertical-align:middle;
+      font-weight: 900;
+      color: #222;
+      display: inline-block;
+      line-height: 120px;
+      text-shadow: 0 0 5px #fff;
+      margin: 30px 0px auto;
+    }
+    #sub_title1{
+      background-image: url("../img/htp.png");
+      width:100%;height:auto;
+      background-size:100% 100%;
+    }
+    #sub_title2{
+      background-image: url("../img/동적가족화.png");
+      width:100%;height:auto;
+      background-size:100% 100%;
+    }

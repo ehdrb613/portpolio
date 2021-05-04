@@ -1,0 +1,18 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8;" />
+	<title>파일업로드 하기</title>
+</head>
+<body>
+<!--폼파일 전송모드-->
+<form enctype="multipart/form-data" action="image_save.php" method="post">
+	<fieldset><legend>파일업로드</legend>
+		<!--업로드 용량제한: 5M -->
+		<input type="hidden" name="MAX_FILE_SIZE" value="524288" />
+		<input type="hidden" name="mode" value="upload" />
+		<input type="file" name="upload" />
+	</fieldset>
+	<p><input type="submit" value="업로드 시작" /></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>h검사</title>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/htp/h_test_style.css">
+       <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+       <script src="../js/h_test1.js" type="text/javascript" charset="utf-8"></script>
+
+       <script type="text/javascript">
+         var currentsec=0; 
+var currentmin=0; 
+var currentmil=0; 
+var keepgoin=false; 
+function timer(){ 
+if(keepgoin){ 
+  currentmil+=1;                
+  if (currentmil==10){        
+    currentmil=0;        
+    currentsec+=1; 
+  } 
+  if (currentsec==60){        
+    currentsec=0;        
+    currentmin+=1;        
+  } 
+  Strsec=""+currentsec;        
+  Strmin=""+currentmin;        
+  Strmil=""+currentmil; 
+  if (Strsec.length!=2){ 
+    Strsec="0"+currentsec; 
+  } 
+  if (Strmin.length!=2){ 
+    Strmin="0"+currentmin; 
+  } 
+  document.display.seconds.value=Strsec; 
+  document.display.minutes.value=Strmin; 
+  document.display.milsecs.value=Strmil; 
+  setTimeout("timer()", 100);        
+} 
+} 
+function startover(){ 
+keepgoin=false;                
+currentsec=0; 
+currentmin=0; 
+currentmil=0; 
+Strsec="00"; 
+Strmin="00"; 
+Strmil="00"; 
+} 
+       </script>
+
+
+</head>
+<body>
+	<header>
+    <div id="return">
+    <a href="../htp_test/htp.php">
+      <img src="../img/화살표2.png"/>
+    </a>
+    </div>
+    </header>
+        
+        <section>
+        	<div id="name">
+        		<br>
+        		<span id="name3">집을 그려주세요</span>
+        	</div>
+        	<div id="explan">
+            <div id="explan2">
+            H(house집) 그림검사는 가로로 그려주셔야 합니다. <br>
+            검사를 시작하기 전에 밑에 시작버튼을 눌러주세요.<Br> 시간은 중요한 요소는 아니지만 너무 긴 시간이 소요되면 검사가 제대로 안될 경우가 있습니다.<Br> 원할한 검사 방법을 위하여 미리 그려놓거나 시간을 너무 길게 그리지 말아주세요.<Br>그림이 완성되시면 밑에 완료 버튼을 눌러 질문을 진행하시면 됩니다.</div>
+          </div>
+          <br>
+<CENTER> 
+
+<FORM NAME="display" ONRESET="startover()"> 
+
+  <input type="text" id = "minutes" name="minutes" value="00:">
+  <input type="text" id = "seconds" name="seconds" value="00:">
+  <input type="text" id = "milsecs" name="milsecs" value="00">
+  <input type="button" name="start" value=" 출발 " onclick="keepgoin=true;timer()"> 
+
+<INPUT type="button" name="pause" value=" 중지 " onclick="keepgoin=false;"> 
+
+<INPUT type="reset" name="reset" value=" 다시 ">
+</FORM> 
+</CENTER> 
+
+<button id="comtime" onclick="timecom()">완료</button>
+</br></br></br></br>
+<div id="camera">
+        	<section id="wrapper">
+</div>
+
+<form enctype="multipart/form-data" action="../php/image_save.php" method="post">
+  <fieldset><legend>파일업로드</legend>
+    <!--업로드 용량제한: 50M -->
+    <input type="hidden" name="MAX_FILE_SIZE" value="52428800" />
+    <input type="hidden" name="mode" value="upload" />
+    <input type="file" name="upload" />
+  </fieldset>
+  <p><input type="submit" value="업로드 시작" /></p>
+</form>
+<script>
+var upload = document.getElementsByTagName('input')[0],
+    holder = document.getElementById('holder'),
+    state = document.getElementById('status');
+if (typeof window.FileReader === 'undefined') {
+  state.className = 'fail';
+} else {
+  state.className = 'success';
+  state.innerHTML = '';
+}
+ 
+upload.onchange = function (e) {
+  e.preventDefault();
+
+  var file = upload.files[0],
+      reader = new FileReader();
+  reader.onload = function (event) {
+    var img = new Image();
+    img.src = event.target.result;
+  
+  
+      img.width = 320;
+	  img.right = 320;
+ 
+    holder.innerHTML = '';
+    holder.appendChild(img);
+  };
+  reader.readAsDataURL(file);
+
+  return false;
+};
+</script>
+
+        </section></div>
+
+
+    
+
+
+
+       <script src="../js/timecom1.js" type="text/javascript" charset="utf-8"></script>
+
+
+</body>
+</html>

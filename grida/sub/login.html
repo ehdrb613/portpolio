@@ -1,22 +1,21 @@
 <!doctype html>
+
 <html lang='ko'>  
     <head>
-
-       <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-       <meta http-equiv="Content-Type" content="text/html, charset=euc-kr">
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
        <link rel="stylesheet" type="text/css" href="../css/login_style.css">
-       <script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
+       <script src="/grida/js/login.js" type="text/javascript" charset="utf-8"></script>
        <title>로그인</title>
     <body>
        <header>
-           <div class="logo"></div>
+           <a href="../"><div class="logo"></div></a>
        </header>
        <section>
-          <form action="" method="POST">
+          <form action="../php/login.php" method="POST" name="userinput">
              <div class="input_area">
                 <!--<span class="input_text"></span>-->
-                <input type="text" id="id" name="u_id" value="" placeholder="아  이  디" onkeypress="do_enter(event)"/>
+                <input type="text" id="id" name="u_id" value="" placeholder="아  이  디"/>
             
              </div>
              <div class="input_area">
@@ -24,21 +23,21 @@
                 <input type="password" id="pw" name="u_pw" value="" placeholder="비밀번호" onkeypress="do_enter(event)" />
                 
              </div>
+
              <div class="input_area">
-             <input type="button" value="L O G I N" id="but" onclick="do_logon();"/>
+             <input type="submit" value="L O G I N" id="login" onclick="return blank()"/>
              
           </form>
-        
-             <input type="button" value="J O I N"/>
+             <input type="button" value="J O I N"/ onclick="location.href=('../php/input.php')"/>
              </div>
              <div>
-              <a href="#">for got to password?</a>
+              <a href="../php/password.php">for got to password?</a>
              </div>
        </section>
+
        <footer>
           <div class="img_area">
-            <img src="../img/facebook.png"/>
-            <img src="../img/naver.png"/>
+       
           </div>
        </footer>
     
