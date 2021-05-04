@@ -1,0 +1,12 @@
+D:\DG\work\donggyu\1024\donggyu_1023\donggyu_1023\bin\Debug\donggyu_1023.exe.config
+D:\DG\work\donggyu\1024\donggyu_1023\donggyu_1023\bin\Debug\donggyu_1023.exe
+D:\DG\work\donggyu\1024\donggyu_1023\donggyu_1023\bin\Debug\donggyu_1023.pdb
+D:\DG\work\donggyu\1024\donggyu_1023\donggyu_1023\obj\Debug\donggyu_1023.csprojAssemblyReference.cache
+D:\DG\work\donggyu\1024\donggyu_1023\donggyu_1023\obj\Debug\donggyu_1023.ArrivalInfo.resources
+D:\DG\work\donggyu\1024\donggyu_1023\donggyu_1023\obj\Debug\donggyu_1023.Properties.Resources.resources
+D:\DG\work\donggyu\1024\donggyu_1023\donggyu_1023\obj\Debug\donggyu_1023.csproj.GenerateResource.cache
+D:\DG\work\donggyu\1024\donggyu_1023\donggyu_1023\obj\Debug\donggyu_1023.csproj.CoreCompileInputs.cache
+D:\DG\work\donggyu\1024\donggyu_1023\donggyu_1023\obj\Debug\donggyu_1023.exe
+D:\DG\work\donggyu\1024\donggyu_1023\donggyu_1023\obj\Debug\donggyu_1023.pdb
+D:\DG\work\donggyu\1024\donggyu_1023\donggyu_1023\obj\Debug\donggyu_1023.Main.resources
+D:\DG\work\donggyu\1024\donggyu_1023\donggyu_1023\obj\Debug\donggyu_1023.InfoView_D.resources
