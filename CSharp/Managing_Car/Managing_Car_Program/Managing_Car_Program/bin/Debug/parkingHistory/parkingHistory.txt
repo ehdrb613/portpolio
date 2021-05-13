@@ -307,3 +307,33 @@
 [2021-04-19 12:27:40]조회-공간있음3번
 [2021-05-04 14:22:24]출차 버튼 클릭
 [2021-05-04 14:22:36]주차 버튼 클릭
+'D:\DG\portpolio\CSharp\Managing_Car\Managing_Car_Program\Managing_Car_Program\bin\Debug\Cars.xml' 파일을 찾을 수 없습니다.
+   위치: System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   위치: System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   위치: System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   위치: System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   위치: System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   위치: System.IO.File.ReadAllText(String path)
+   위치: Managing_Car_Program.Datamanager.Load() 파일 D:\DG\portpolio\CSharp\Managing_Car\Managing_Car_Program\Managing_Car_Program\Datamanager.cs:줄 35
+[2021-05-13 15:14:43]출차 버튼 클릭
+[2021-05-13 15:14:44]아직 차 없음
+[2021-05-13 15:14:48]주차 버튼 클릭
+[2021-05-13 15:14:54]출차 버튼 클릭
+[2021-05-13 15:15:25]출차 버튼 클릭
+[2021-05-13 15:15:25]아직 차 없음
+[2021-05-13 15:15:27]출차 버튼 클릭
+[2021-05-13 15:15:28]아직 차 없음
+'D:\DG\portpolio\CSharp\Managing_Car\Managing_Car_Program\Managing_Car_Program\bin\Debug\Cars.xml' 파일을 찾을 수 없습니다.
+   위치: System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   위치: System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   위치: System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   위치: System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   위치: System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   위치: System.IO.File.ReadAllText(String path)
+   위치: Managing_Car_Program.Datamanager.Load() 파일 D:\DG\portpolio\CSharp\Managing_Car\Managing_Car_Program\Managing_Car_Program\Datamanager.cs:줄 35
+[2021-05-13 15:16:01]주차 버튼 클릭
+[2021-05-13 15:16:03]출차 버튼 클릭
+[2021-05-13 15:16:46]출차 버튼 클릭
+[2021-05-13 15:17:02]주차 버튼 클릭
+[2021-05-13 15:19:14]출차 버튼 클릭
+[2021-05-13 15:19:17]주차 버튼 클릭

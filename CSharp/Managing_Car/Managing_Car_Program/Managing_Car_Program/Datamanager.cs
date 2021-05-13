@@ -41,7 +41,7 @@ namespace Managing_Car_Program
                     string tempDriverName = item.Element("driverName").Value;
                     string tempPhoneNumber = item.Element("phoneNumber").Value;
                     DateTime tempParkingTime = item.Element("parkingTime").Value == "" ?
-                        DateTime.Now : DateTime.Parse(item.Element("parkingTime").Value);
+                       default  : DateTime.Parse(item.Element("parkingTime").Value);
 
                     parkingcar tempCar = new parkingcar()
                     {

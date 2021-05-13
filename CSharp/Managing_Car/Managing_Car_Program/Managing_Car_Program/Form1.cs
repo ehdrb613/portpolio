@@ -121,7 +121,7 @@ namespace Managing_Car_Program
                             Datamanager.Cars[i].carNumber = "";
                             Datamanager.Cars[i].driverName = "";
                             Datamanager.Cars[i].phoneNumber = "";
-                            Datamanager.Cars[i].parkingTime = DateTime.Now;
+                            Datamanager.Cars[i].parkingTime = new DateTime();
                             string contents = $"주차 공간 {textBox1.Text}에 {textBox2}차량 출차";
                             MessageBox.Show(contents);
                             writeLog(contents, DateTime.Now.ToString("yyyy_MM_dd"));

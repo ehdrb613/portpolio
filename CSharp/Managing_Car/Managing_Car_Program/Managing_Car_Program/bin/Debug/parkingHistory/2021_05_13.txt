@@ -1,0 +1,8 @@
+[2021-05-13 15:14:49]주차 공간 4에 System.Windows.Forms.TextBox, Text: dd차를 주차함
+[2021-05-13 15:14:55]주차 공간 4에 System.Windows.Forms.TextBox, Text: dd차량 출차
+[2021-05-13 15:16:02]주차 공간 0에 System.Windows.Forms.TextBox, Text: ddd차를 주차함
+[2021-05-13 15:16:04]주차 공간 0에 System.Windows.Forms.TextBox, Text: ddd차량 출차
+[2021-05-13 15:16:47]주차 공간 1에 System.Windows.Forms.TextBox, Text: 1221차량 출차
+[2021-05-13 15:17:04]주차 공간 1에 System.Windows.Forms.TextBox, Text: 48소5570차를 주차함
+[2021-05-13 15:19:16]주차 공간 1에 System.Windows.Forms.TextBox, Text: 48소5570차량 출차
+[2021-05-13 15:19:18]주차 공간 1에 System.Windows.Forms.TextBox, Text: 48소5570차를 주차함
