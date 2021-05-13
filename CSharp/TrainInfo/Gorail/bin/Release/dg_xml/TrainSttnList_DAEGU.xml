@@ -1,0 +1,21 @@
+<response>
+  <header>
+    <resultCode>00</resultCode>
+    <resultMsg>NORMAL SERVICE.</resultMsg>
+  </header>
+  <body>
+    <items>
+      <item>
+        <nodeid>NAT013239</nodeid>
+        <nodename>대구</nodename>
+      </item>
+      <item>
+        <nodeid>NAT013271</nodeid>
+        <nodename>동대구</nodename>
+      </item>
+    </items>
+    <numOfRows>104</numOfRows>
+    <pageNo>1</pageNo>
+    <totalCount>2</totalCount>
+  </body>
+</response>

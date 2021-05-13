@@ -30,9 +30,9 @@ namespace Lotto2
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.labelNum6 = new System.Windows.Forms.Label();
             this.labelNum5 = new System.Windows.Forms.Label();
             this.labelNum4 = new System.Windows.Forms.Label();
@@ -40,7 +40,7 @@ namespace Lotto2
             this.labelNum2 = new System.Windows.Forms.Label();
             this.labelNum1 = new System.Windows.Forms.Label();
             this.button_test = new System.Windows.Forms.Button();
-            this.lottoJsonBtn = new System.Windows.Forms.Button();
+            this.newSaveJsonBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lottoNumlist = new System.Windows.Forms.ListView();
             this.JsonLoadBtn = new System.Windows.Forms.Button();
@@ -128,19 +128,19 @@ namespace Lotto2
             this.button_test.UseVisualStyleBackColor = true;
             this.button_test.Click += new System.EventHandler(this.button_test_Click);
             // 
-            // lottoJsonBtn
+            // newSaveJsonBtn
             // 
-            this.lottoJsonBtn.BackColor = System.Drawing.Color.PaleGreen;
-            this.lottoJsonBtn.FlatAppearance.BorderSize = 0;
-            this.lottoJsonBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lottoJsonBtn.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold);
-            this.lottoJsonBtn.Location = new System.Drawing.Point(1011, 12);
-            this.lottoJsonBtn.Name = "lottoJsonBtn";
-            this.lottoJsonBtn.Size = new System.Drawing.Size(127, 23);
-            this.lottoJsonBtn.TabIndex = 2;
-            this.lottoJsonBtn.Text = "최신 데이터 저장 ";
-            this.lottoJsonBtn.UseVisualStyleBackColor = false;
-            this.lottoJsonBtn.Click += new System.EventHandler(this.lottoJsonBtn_Click);
+            this.newSaveJsonBtn.BackColor = System.Drawing.Color.PaleGreen;
+            this.newSaveJsonBtn.FlatAppearance.BorderSize = 0;
+            this.newSaveJsonBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newSaveJsonBtn.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold);
+            this.newSaveJsonBtn.Location = new System.Drawing.Point(1011, 12);
+            this.newSaveJsonBtn.Name = "newSaveJsonBtn";
+            this.newSaveJsonBtn.Size = new System.Drawing.Size(127, 23);
+            this.newSaveJsonBtn.TabIndex = 2;
+            this.newSaveJsonBtn.Text = "최신 데이터 저장 ";
+            this.newSaveJsonBtn.UseVisualStyleBackColor = false;
+            this.newSaveJsonBtn.Click += new System.EventHandler(this.newSaveJsonBtn_Click);
             // 
             // label1
             // 
@@ -211,30 +211,30 @@ namespace Lotto2
             this.lottoChart.BorderSkin.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             this.lottoChart.BorderSkin.PageColor = System.Drawing.Color.Transparent;
             this.lottoChart.BorderSkin.SkinStyle = System.Windows.Forms.DataVisualization.Charting.BorderSkinStyle.Emboss;
-            chartArea4.BackColor = System.Drawing.Color.Transparent;
-            chartArea4.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
-            chartArea4.Name = "ChartArea1";
-            this.lottoChart.ChartAreas.Add(chartArea4);
-            legend4.AutoFitMinFontSize = 5;
-            legend4.Name = "Legend1";
-            this.lottoChart.Legends.Add(legend4);
+            chartArea1.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
+            chartArea1.Name = "ChartArea1";
+            this.lottoChart.ChartAreas.Add(chartArea1);
+            legend1.AutoFitMinFontSize = 5;
+            legend1.Name = "Legend1";
+            this.lottoChart.Legends.Add(legend1);
             this.lottoChart.Location = new System.Drawing.Point(12, 478);
             this.lottoChart.Name = "lottoChart";
             this.lottoChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series4.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Top;
-            series4.BackSecondaryColor = System.Drawing.Color.Transparent;
-            series4.ChartArea = "ChartArea1";
-            series4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series4.IsValueShownAsLabel = true;
-            series4.IsVisibleInLegend = false;
-            series4.LabelBackColor = System.Drawing.Color.Transparent;
-            series4.LabelBorderColor = System.Drawing.Color.Transparent;
-            series4.Legend = "Legend1";
-            series4.MarkerSize = 1;
-            series4.Name = "Series1";
-            series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
-            series4.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            this.lottoChart.Series.Add(series4);
+            series1.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Top;
+            series1.BackSecondaryColor = System.Drawing.Color.Transparent;
+            series1.ChartArea = "ChartArea1";
+            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.IsValueShownAsLabel = true;
+            series1.IsVisibleInLegend = false;
+            series1.LabelBackColor = System.Drawing.Color.Transparent;
+            series1.LabelBorderColor = System.Drawing.Color.Transparent;
+            series1.Legend = "Legend1";
+            series1.MarkerSize = 1;
+            series1.Name = "Series1";
+            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
+            series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            this.lottoChart.Series.Add(series1);
             this.lottoChart.Size = new System.Drawing.Size(1219, 324);
             this.lottoChart.TabIndex = 24;
             this.lottoChart.TabStop = false;
@@ -322,7 +322,7 @@ namespace Lotto2
             this.Controls.Add(this.JsonLoadBtn);
             this.Controls.Add(this.lottoNumlist);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lottoJsonBtn);
+            this.Controls.Add(this.newSaveJsonBtn);
             this.Controls.Add(this.labelNum6);
             this.Controls.Add(this.labelNum5);
             this.Controls.Add(this.labelNum4);
@@ -357,7 +357,7 @@ namespace Lotto2
         private System.Windows.Forms.Label labelNum2;
         private System.Windows.Forms.Label labelNum1;
         private System.Windows.Forms.Button button_test;
-        private System.Windows.Forms.Button lottoJsonBtn;
+        private System.Windows.Forms.Button newSaveJsonBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView lottoNumlist;
         private System.Windows.Forms.Button JsonLoadBtn;

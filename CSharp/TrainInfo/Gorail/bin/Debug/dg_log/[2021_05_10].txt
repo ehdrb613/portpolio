@@ -1,0 +1,16 @@
+[2021-05-10 11:56:26]대구 선택함
+[2021-05-10 11:56:30]조회 클릭
+[2021-05-10 11:56:30]인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[2021-05-10 11:56:30]   위치: System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   위치: System.Collections.Generic.List`1.get_Item(Int32 index)
+   위치: TrainInfo.DataManager_D.ShowInfo(String depPlaceId, String arrPlaceId, List`1 gradeCode) 파일 D:\DG\work\donggyu\TrainInfo\Gorail\Data\DataManager_D.cs:줄 433
+[2021-05-10 11:56:31]도착정보가 없습니다.
+[2021-05-10 11:56:32]조회 클릭
+[2021-05-10 11:56:33]출발역:서울_도착역:대구
+[2021-05-10 12:21:36]대구 선택함
+[2021-05-10 12:21:42]조회 클릭
+[2021-05-10 12:21:42]출발역:서울_도착역:동대구
+[2021-05-10 12:26:06]대구 선택함
+[2021-05-10 12:26:14]조회 클릭
+[2021-05-10 12:26:15]출발역:서울_도착역:동대구

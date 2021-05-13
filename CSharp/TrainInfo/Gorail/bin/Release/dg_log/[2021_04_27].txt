@@ -1,0 +1,24 @@
+[2021-04-27 15:00:25]전체 선택함
+[2021-04-27 15:00:42]조회 클릭
+[2021-04-27 15:00:43]출발역:부산도착역:서울
+[2021-04-27 15:01:31]대구 선택함
+[2021-04-27 15:19:48]전체 선택함
+[2021-04-27 15:20:03]조회 클릭
+[2021-04-27 15:20:03]출발역:청량리 / 도착역:안동
+[2021-04-27 15:20:07]조회 클릭
+[2021-04-27 15:20:07]인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[2021-04-27 15:20:07]   위치: System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   위치: System.Collections.Generic.List`1.get_Item(Int32 index)
+   위치: TrainInfo.DataManager_D.ShowInfo(String depPlaceId, String arrPlaceId, List`1 gradeCode) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\Data\DataManager_D.cs:줄 466
+   위치: TrainInfo.InfoView_D.infoClick_Click(Object sender, EventArgs e) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\InfoView_D.cs:줄 88
+[2021-04-27 15:29:25]대구 선택함
+[2021-04-27 15:29:29]전체 선택함
+[2021-04-27 15:29:35]대구 선택함
+[2021-04-27 15:29:37]전체 선택함
+[2021-04-27 15:30:09]대구 선택함
+[2021-04-27 15:30:12]전체 선택함
+[2021-04-27 15:30:25]조회 클릭
+[2021-04-27 15:30:25]출발역:청량리 / 도착역:안동
+[2021-04-27 15:30:29]조회 클릭
+[2021-04-27 15:30:29]출발역:청량리 / 도착역:안동

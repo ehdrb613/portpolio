@@ -20,6 +20,7 @@ namespace Lotto2
     {
         DataManager dm = new DataManager();
         int i = 0; //차트 번호
+        bool isLoad = false;
         public Form1()
         {
             InitializeComponent();
@@ -54,8 +55,10 @@ namespace Lotto2
                 writeLog("번호 별 나온 횟수 계산", DateTime.Now.ToString("yyyy_MM_dd"));
 
                 timer1.Interval = 100;      // 0.1초
+                
                 timer1.Tick += new EventHandler(timer1_Tick);
                 timer1.Start();
+           
                
             }
             else 
@@ -66,7 +69,6 @@ namespace Lotto2
 
 
             }
-
 
 
 
@@ -98,55 +100,76 @@ namespace Lotto2
 
 
 
-        private void lottoJsonBtn_Click(object sender, EventArgs e)
+       
+
+        private void JsonLoadBtn_Click(object sender, EventArgs e)
+        {
+            
+           
+            lottoNumlist.Items.Clear();
+            lottoChart.Series[0].Points.Clear();//초기화
+
+            isLoad = true;
+            if (isLoad)
+            {
+                i = 0;
+                timer1.Interval = 100;
+                timer1.Stop();
+                timer1.Start();
+            }
+            else
+            {
+                timer1.Tick += new EventHandler(timer1_Tick);
+                timer1.Start();
+
+            }
+
+     
+
+
+            int count = DataManager.lottoNums.Count - 1;
+
+           /* winNum.Text = $"{DataManager.lottoNums[count].drwNo} 회차  " +
+                $"{DataManager.lottoNums[count].drwtNo1}," +
+                $"{DataManager.lottoNums[count].drwtNo2}," +
+                $"{DataManager.lottoNums[count].drwtNo3}," +
+                $"{DataManager.lottoNums[count].drwtNo4}," +
+                $"{DataManager.lottoNums[count].drwtNo5}," +
+                $"{DataManager.lottoNums[count].drwtNo6}" +
+                $" 보너스:{DataManager.lottoNums[count].bnusNo}" +
+                $" (날짜 :{DataManager.lottoNums[count].drwNoDate})";*/
+
+
+
+        }
+
+        private void newSaveJsonBtn_Click(object sender, EventArgs e)
         {
             new Loading().ShowDialog();
 
             DataManager.LoadJson();
             DataManager.numCount();
-
+           
 
 
             lottoNumlist.Items.Clear();
             lottoChart.Series[0].Points.Clear();//초기화
 
-          
+            isLoad = true;
+            if (isLoad)
+            {
 
-            timer1.Tick += new EventHandler(timer1_Tick);
-            timer1.Start();
+                i = 0;
+                timer1.Interval = 100;
+                timer1.Stop();
+                timer1.Start();
+            }
+            else
+            {
+                timer1.Tick += new EventHandler(timer1_Tick);
+                timer1.Start();
 
-
-
-
-            int count = DataManager.lottoNums.Count - 1;
-
-            winNum.Text = $"{DataManager.lottoNums[count].drwNo} 회차  " +
-                $"{DataManager.lottoNums[count].drwtNo1}," +
-                $"{DataManager.lottoNums[count].drwtNo2}," +
-                $"{DataManager.lottoNums[count].drwtNo3}," +
-                $"{DataManager.lottoNums[count].drwtNo4}," +
-                $"{DataManager.lottoNums[count].drwtNo5}," +
-                $"{DataManager.lottoNums[count].drwtNo6}" +
-                $" 보너스:{DataManager.lottoNums[count].bnusNo}" +
-                $" (날짜 :{DataManager.lottoNums[count].drwNoDate})";
-            
-        }
-
-        private void JsonLoadBtn_Click(object sender, EventArgs e)
-        {
-            
-
-
-
-            lottoNumlist.Items.Clear();
-            lottoNumlist.Items.Clear();
-            lottoChart.Series[0].Points.Clear();//초기화
-
-
-
-
-            timer1.Tick += new EventHandler(timer1_Tick);
-            timer1.Start();
+            }
 
 
 
@@ -163,10 +186,7 @@ namespace Lotto2
                 $" 보너스:{DataManager.lottoNums[count].bnusNo}" +
                 $" (날짜 :{DataManager.lottoNums[count].drwNoDate})";
 
-
-
         }
-
         private void Form1_Shown(object sender, EventArgs e)
         {
             
@@ -197,7 +217,7 @@ namespace Lotto2
                 i++;
             }
 
-            //Thread.Sleep(500);
+           //Thread.Sleep(50);
 
         }
         private void writeLog(string contens, string date)

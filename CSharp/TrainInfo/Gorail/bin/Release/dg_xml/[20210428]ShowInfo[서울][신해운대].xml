@@ -1,0 +1,22 @@
+<response>
+  <header>
+    <resultCode>00</resultCode>
+    <resultMsg>NORMAL SERVICE.</resultMsg>
+  </header>
+  <body>
+    <items>
+      <item>
+        <adultcharge>0</adultcharge>
+        <arrplacename>신해운대</arrplacename>
+        <arrplandtime>20210428120100</arrplandtime>
+        <depplacename>서울</depplacename>
+        <depplandtime>20210428070400</depplandtime>
+        <traingradename>ITX-새마을</traingradename>
+        <trainno>1021</trainno>
+      </item>
+    </items>
+    <numOfRows>104</numOfRows>
+    <pageNo>1</pageNo>
+    <totalCount>1</totalCount>
+  </body>
+</response>

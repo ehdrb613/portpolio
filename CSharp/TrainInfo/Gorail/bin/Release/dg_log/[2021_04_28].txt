@@ -1,0 +1,121 @@
+[2021-04-28 10:58:09]대구 선택함
+[2021-04-28 10:58:11]조회 클릭
+[2021-04-28 10:58:12]출발역:서울 / 도착역:대구
+[2021-04-28 15:11:33]대구 선택함
+[2021-04-28 15:12:00]대구 선택함
+[2021-04-28 15:12:05]조회 클릭
+[2021-04-28 15:12:05]출발역:서울 / 도착역:동대구
+[2021-04-28 15:12:22]조회 클릭
+[2021-04-28 15:12:23]출발역:서울 / 도착역:동대구
+[2021-04-28 15:12:28]조회 클릭
+[2021-04-28 15:12:28]출발역:서울 / 도착역:대구
+[2021-04-28 15:12:34]조회 클릭
+[2021-04-28 15:12:34]출발역:서울 / 도착역:동대구
+[2021-04-28 15:13:22]대구 선택함
+[2021-04-28 16:13:25]부산 선택함
+[2021-04-28 16:13:35]조회 클릭
+[2021-04-28 16:15:55]부산 선택함
+[2021-04-28 16:15:59]조회 클릭
+[2021-04-28 16:16:02]조회 클릭
+[2021-04-28 16:16:03]출발역:서울 / 도착역:부산
+[2021-04-28 16:16:06]조회 클릭
+[2021-04-28 16:16:07]인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[2021-04-28 16:16:07]   위치: System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   위치: System.Collections.Generic.List`1.get_Item(Int32 index)
+   위치: TrainInfo.DataManager_D.ShowInfo(String depPlaceId, String arrPlaceId, List`1 gradeCode) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\Data\DataManager_D.cs:줄 468
+   위치: TrainInfo.InfoView_D.infoClick_Click(Object sender, EventArgs e) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\InfoView_D.cs:줄 88
+[2021-04-28 16:16:42]대구 선택함
+[2021-04-28 16:16:44]조회 클릭
+[2021-04-28 16:16:44]출발역:서울 / 도착역:대구
+[2021-04-28 16:16:50]조회 클릭
+[2021-04-28 16:16:51]출발역:서울 / 도착역:동대구
+[2021-04-28 16:16:58]부산 선택함
+[2021-04-28 16:17:00]조회 클릭
+[2021-04-28 16:17:01]인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[2021-04-28 16:17:01]   위치: System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   위치: System.Collections.Generic.List`1.get_Item(Int32 index)
+   위치: TrainInfo.DataManager_D.ShowInfo(String depPlaceId, String arrPlaceId, List`1 gradeCode) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\Data\DataManager_D.cs:줄 468
+   위치: TrainInfo.InfoView_D.infoClick_Click(Object sender, EventArgs e) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\InfoView_D.cs:줄 88
+[2021-04-28 16:17:13]서울 선택함
+[2021-04-28 16:17:16]조회 클릭
+[2021-04-28 16:17:16]출발역:용산 / 도착역:서울
+[2021-04-28 16:17:18]조회 클릭
+[2021-04-28 16:17:19]출발역:화명 / 도착역:서울
+[2021-04-28 16:17:23]인천 선택함
+[2021-04-28 16:17:30]조회 클릭
+[2021-04-28 16:17:30]인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[2021-04-28 16:17:30]   위치: System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   위치: System.Collections.Generic.List`1.get_Item(Int32 index)
+   위치: TrainInfo.DataManager_D.ShowInfo(String depPlaceId, String arrPlaceId, List`1 gradeCode) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\Data\DataManager_D.cs:줄 468
+   위치: TrainInfo.InfoView_D.infoClick_Click(Object sender, EventArgs e) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\InfoView_D.cs:줄 88
+[2021-04-28 16:19:12]인천 선택함
+[2021-04-28 16:19:15]조회 클릭
+[2021-04-28 16:19:15]인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[2021-04-28 16:19:15]   위치: System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   위치: System.Collections.Generic.List`1.get_Item(Int32 index)
+   위치: TrainInfo.DataManager_D.ShowInfo(String depPlaceId, String arrPlaceId, List`1 gradeCode) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\Data\DataManager_D.cs:줄 468
+   위치: TrainInfo.InfoView_D.infoClick_Click(Object sender, EventArgs e) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\InfoView_D.cs:줄 88
+[2021-04-28 16:19:41]인천 선택함
+[2021-04-28 16:19:54]조회 클릭
+[2021-04-28 16:19:54]인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[2021-04-28 16:19:54]   위치: System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   위치: System.Collections.Generic.List`1.get_Item(Int32 index)
+   위치: TrainInfo.DataManager_D.ShowInfo(String depPlaceId, String arrPlaceId, List`1 gradeCode) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\Data\DataManager_D.cs:줄 468
+   위치: TrainInfo.InfoView_D.infoClick_Click(Object sender, EventArgs e) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\InfoView_D.cs:줄 88
+[2021-04-28 16:20:06]조회 클릭
+[2021-04-28 16:26:19]대구 선택함
+[2021-04-28 16:26:24]울산 선택함
+[2021-04-28 16:39:16]대구 선택함
+[2021-04-28 16:39:18]조회 클릭
+[2021-04-28 16:39:18]출발역:서울_도착역:대구
+[2021-04-28 16:39:22]조회 클릭
+[2021-04-28 16:39:23]출발역:서울_도착역:동대구
+[2021-04-28 16:39:32]조회 클릭
+[2021-04-28 16:39:33]출발역:서울_도착역:동대구
+[2021-04-28 16:39:38]조회 클릭
+[2021-04-28 16:39:38]출발역:서울_도착역:동대구
+[2021-04-28 16:39:41]조회 클릭
+[2021-04-28 16:39:41]인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[2021-04-28 16:39:41]   위치: System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   위치: System.Collections.Generic.List`1.get_Item(Int32 index)
+   위치: TrainInfo.DataManager_D.ShowInfo(String depPlaceId, String arrPlaceId, List`1 gradeCode) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\Data\DataManager_D.cs:줄 439
+[2021-04-28 16:39:42]도착정보가 없습니다.
+[2021-04-28 16:39:51]전체 선택함
+[2021-04-28 16:39:57]조회 클릭
+[2021-04-28 16:39:57]인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[2021-04-28 16:39:57]   위치: System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   위치: System.Collections.Generic.List`1.get_Item(Int32 index)
+   위치: TrainInfo.DataManager_D.ShowInfo(String depPlaceId, String arrPlaceId, List`1 gradeCode) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\Data\DataManager_D.cs:줄 439
+[2021-04-28 16:39:58]도착정보가 없습니다.
+[2021-04-28 16:40:06]조회 클릭
+[2021-04-28 16:40:06]인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[2021-04-28 16:40:06]   위치: System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   위치: System.Collections.Generic.List`1.get_Item(Int32 index)
+   위치: TrainInfo.DataManager_D.ShowInfo(String depPlaceId, String arrPlaceId, List`1 gradeCode) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\Data\DataManager_D.cs:줄 439
+[2021-04-28 16:40:07]도착정보가 없습니다.
+[2021-04-28 16:40:14]조회 클릭
+[2021-04-28 16:40:14]인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[2021-04-28 16:40:14]   위치: System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   위치: System.Collections.Generic.List`1.get_Item(Int32 index)
+   위치: TrainInfo.DataManager_D.ShowInfo(String depPlaceId, String arrPlaceId, List`1 gradeCode) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\Data\DataManager_D.cs:줄 439
+[2021-04-28 16:40:15]도착정보가 없습니다.
+[2021-04-28 16:40:27]조회 클릭
+[2021-04-28 16:40:27]인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[2021-04-28 16:40:27]   위치: System.ThrowHelper.ThrowArgumentOutOfRangeException(ExceptionArgument argument, ExceptionResource resource)
+   위치: System.Collections.Generic.List`1.get_Item(Int32 index)
+   위치: TrainInfo.DataManager_D.ShowInfo(String depPlaceId, String arrPlaceId, List`1 gradeCode) 파일 D:\DG\work\donggyu\TrainInfo\donggyu_1023\Data\DataManager_D.cs:줄 439
+[2021-04-28 16:40:28]도착정보가 없습니다.
+[2021-04-28 16:45:57]대구 선택함
+[2021-04-28 16:46:00]조회 클릭
+[2021-04-28 16:46:00]출발역:서울_도착역:대구
+[2021-04-28 16:52:54]대전 선택함
