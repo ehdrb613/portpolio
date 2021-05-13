@@ -124,12 +124,12 @@ namespace Lotto2
 
             }
 
-     
 
 
+            /* 
             int count = DataManager.lottoNums.Count - 1;
 
-           /* winNum.Text = $"{DataManager.lottoNums[count].drwNo} 회차  " +
+           winNum.Text = $"{DataManager.lottoNums[count].drwNo} 회차  " +
                 $"{DataManager.lottoNums[count].drwtNo1}," +
                 $"{DataManager.lottoNums[count].drwtNo2}," +
                 $"{DataManager.lottoNums[count].drwtNo3}," +
@@ -171,20 +171,7 @@ namespace Lotto2
 
             }
 
-
-
-
-            int count = DataManager.lottoNums.Count - 1;
-
-            winNum.Text = $"{DataManager.lottoNums[count].drwNo} 회차  " +
-                $"{DataManager.lottoNums[count].drwtNo1}," +
-                $"{DataManager.lottoNums[count].drwtNo2}," +
-                $"{DataManager.lottoNums[count].drwtNo3}," +
-                $"{DataManager.lottoNums[count].drwtNo4}," +
-                $"{DataManager.lottoNums[count].drwtNo5}," +
-                $"{DataManager.lottoNums[count].drwtNo6}" +
-                $" 보너스:{DataManager.lottoNums[count].bnusNo}" +
-                $" (날짜 :{DataManager.lottoNums[count].drwNoDate})";
+           
 
         }
         private void Form1_Shown(object sender, EventArgs e)
@@ -235,7 +222,10 @@ namespace Lotto2
             Close();
         }
 
-       
+       private void timerReset()
+        {
+
+        }
     }
 }
 
