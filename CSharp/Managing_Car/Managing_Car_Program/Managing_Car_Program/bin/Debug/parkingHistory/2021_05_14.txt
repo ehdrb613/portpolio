@@ -1,0 +1,2 @@
+[2021-05-14 09:41:16]주차 공간 3에 System.Windows.Forms.TextBox, Text: ddd차를 주차함
+[2021-05-14 09:41:38]주차 공간 3에 System.Windows.Forms.TextBox, Text: ddd차량 출차

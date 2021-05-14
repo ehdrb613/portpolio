@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="car_managerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>car_managerDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Datamanager.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -53,6 +58,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MSDBHelper.cs" />
     <Compile Include="ParkingCar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,6 +74,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="car_managerDataSet.xsc">
+      <DependentUpon>car_managerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="car_managerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>car_managerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="car_managerDataSet.xss">
+      <DependentUpon>car_managerDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\DataSources\parkingcar.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
