@@ -238,5 +238,10 @@ namespace Managing_Car_Program
             this.park_car_dbTableAdapter.Fill(this.car_managerDataSet.park_car_db);
 
         }
+
+        private void dbConnect_Click(object sender, EventArgs e)
+        {
+            MSDBHelper.DBConnect();
+        }
     }
 }

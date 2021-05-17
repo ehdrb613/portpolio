@@ -53,11 +53,13 @@ namespace Managing_Car_Program
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.car_managerDataSet = new Managing_Car_Program.car_managerDataSet();
             this.parkcardbBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.car_managerDataSet = new Managing_Car_Program.car_managerDataSet();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.park_car_dbTableAdapter = new Managing_Car_Program.car_managerDataSetTableAdapters.park_car_dbTableAdapter();
             this.parkingcarBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dbConnect = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,8 +70,8 @@ namespace Managing_Car_Program
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.car_managerDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkcardbBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.car_managerDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingcarBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -266,7 +268,7 @@ namespace Managing_Car_Program
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
-            this.dataGridView1.DataSource = this.parkingcarBindingSource;
+            this.dataGridView1.DataSource = this.parkcardbBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -282,6 +284,16 @@ namespace Managing_Car_Program
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
+            // parkcardbBindingSource
+            // 
+            this.parkcardbBindingSource.DataMember = "park_car_db";
+            this.parkcardbBindingSource.DataSource = this.car_managerDataSet;
+            // 
+            // car_managerDataSet
+            // 
+            this.car_managerDataSet.DataSetName = "car_managerDataSet";
+            this.car_managerDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
@@ -291,16 +303,6 @@ namespace Managing_Car_Program
             this.listBox1.Size = new System.Drawing.Size(774, 148);
             this.listBox1.TabIndex = 0;
             // 
-            // car_managerDataSet
-            // 
-            this.car_managerDataSet.DataSetName = "car_managerDataSet";
-            this.car_managerDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // parkcardbBindingSource
-            // 
-            this.parkcardbBindingSource.DataMember = "park_car_db";
-            this.parkcardbBindingSource.DataSource = this.car_managerDataSet;
-            // 
             // park_car_dbTableAdapter
             // 
             this.park_car_dbTableAdapter.ClearBeforeFill = true;
@@ -309,35 +311,45 @@ namespace Managing_Car_Program
             // 
             this.parkingcarBindingSource.DataSource = typeof(Managing_Car_Program.parkingcar);
             // 
+            // dbConnect
+            // 
+            this.dbConnect.Location = new System.Drawing.Point(713, 74);
+            this.dbConnect.Name = "dbConnect";
+            this.dbConnect.Size = new System.Drawing.Size(75, 23);
+            this.dbConnect.TabIndex = 4;
+            this.dbConnect.Text = "DB연결";
+            this.dbConnect.UseVisualStyleBackColor = true;
+            this.dbConnect.Click += new System.EventHandler(this.dbConnect_Click);
+            // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "parkingSpot";
-            this.dataGridViewTextBoxColumn1.HeaderText = "parkingSpot";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "parking_spot";
+            this.dataGridViewTextBoxColumn1.HeaderText = "parking_spot";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "carNumber";
-            this.dataGridViewTextBoxColumn2.HeaderText = "carNumber";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "car_number";
+            this.dataGridViewTextBoxColumn2.HeaderText = "car_number";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "driverName";
-            this.dataGridViewTextBoxColumn3.HeaderText = "driverName";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "driver_name";
+            this.dataGridViewTextBoxColumn3.HeaderText = "driver_name";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "phoneNumber";
-            this.dataGridViewTextBoxColumn4.HeaderText = "phoneNumber";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "phone_number";
+            this.dataGridViewTextBoxColumn4.HeaderText = "phone_number";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "parkingTime";
-            this.dataGridViewTextBoxColumn5.HeaderText = "parkingTime";
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "parking_time";
+            this.dataGridViewTextBoxColumn5.HeaderText = "parking_time";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // Form1
@@ -345,6 +357,7 @@ namespace Managing_Car_Program
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(822, 657);
+            this.Controls.Add(this.dbConnect);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -361,8 +374,8 @@ namespace Managing_Car_Program
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.car_managerDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkcardbBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.car_managerDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.parkingcarBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -406,6 +419,8 @@ namespace Managing_Car_Program
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.Button dbConnect;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
