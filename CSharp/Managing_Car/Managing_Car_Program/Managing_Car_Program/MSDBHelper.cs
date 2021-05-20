@@ -28,7 +28,7 @@ namespace Managing_Car_Program
 
                     DataBaseConnection.Open();
 
-                    MessageBox.Show("앙큼한유채 : 데이터베이스에 연결하였습니다.", "Information");
+                    MessageBox.Show("데이터베이스에 연결하였습니다.", "Information");
 
                     //DB닫기
 
@@ -45,6 +45,8 @@ namespace Managing_Car_Program
                 }
 
         }
+
+       
 
 
     }
