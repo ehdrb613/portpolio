@@ -329,7 +329,6 @@ namespace CarManager0323.DB
         {
             try
             {
-               
                 string sql = string.Format("insert into CAR_T values " +
                     "(car_t_SEQ.nextval,'{0}','{1}','{2}','{3}')"
                     , car.Year, car.Model,  car.Money, car.Color);
